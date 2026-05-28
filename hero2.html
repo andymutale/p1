@@ -1,250 +1,401 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
+<html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Michael Gremillion | Faithful Pastoral Wisdom</title>
+<title>Michael's Hub | Ministry, Media &amp; The Written Word</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Source+Serif+4:opsz,wght@8..60;400..700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=Source+Sans+3:wght@400;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-container-high": "#ebe8e2",
-                        "secondary": "#556434",
-                        "error-container": "#ffdad6",
-                        "on-surface-variant": "#45483e",
-                        "on-primary-fixed-variant": "#3e4b26",
-                        "on-secondary": "#ffffff",
-                        "tertiary-container": "#5b4104",
-                        "error": "#ba1a1a",
-                        "surface-tint": "#55633c",
-                        "on-tertiary-fixed": "#271900",
-                        "on-primary": "#ffffff",
-                        "on-background": "#1c1c18",
-                        "surface-container-highest": "#e6e2dc",
-                        "ink": "#1E1B17",
-                        "primary-fixed-dim": "#bdcd9c",
-                        "primary": "#273311",
-                        "surface-variant": "#e6e2dc",
-                        "parchment": "#EDE8DF",
-                        "surface-dim": "#ddd9d4",
-                        "outline": "#76786d",
-                        "on-tertiary-container": "#d4ae69",
-                        "surface-container": "#f1ede7",
-                        "on-primary-fixed": "#141f01",
-                        "primary-fixed": "#d9e9b7",
-                        "warm-white": "#FDFAF6",
-                        "outline-variant": "#c6c8ba",
-                        "tertiary": "#402c00",
-                        "secondary-fixed-dim": "#bccd93",
-                        "on-secondary-fixed-variant": "#3e4c1e",
-                        "tertiary-fixed": "#ffdea7",
-                        "secondary-fixed": "#d8eaad",
-                        "inverse-surface": "#31302d",
-                        "on-surface": "#1c1c18",
-                        "secondary-container": "#d8eaad",
-                        "tertiary-fixed-dim": "#e8c17a",
-                        "surface": "#fdf9f3",
-                        "surface-container-low": "#f7f3ed",
-                        "warm-gray": "#6B6560",
-                        "muted-rust": "#8B3E2F",
-                        "inverse-on-surface": "#f4f0ea",
-                        "on-tertiary": "#ffffff",
-                        "on-secondary-container": "#5b6a39",
-                        "inverse-primary": "#bdcd9c",
-                        "on-tertiary-fixed-variant": "#5d4206",
-                        "background": "#fdf9f3",
-                        "surface-bright": "#fdf9f3",
-                        "on-error-container": "#93000a",
-                        "on-error": "#ffffff",
-                        "on-secondary-fixed": "#151f00",
-                        "primary-container": "#3d4a25",
-                        "warm-taupe": "#D5CFC6",
-                        "on-primary-container": "#aab98a",
-                        "burnished-gold": "#9B7A3B"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "margin-desktop": "64px",
-                        "card-padding": "24px",
-                        "margin-mobile": "20px",
-                        "section-gap-mobile": "64px",
-                        "section-gap-desktop": "120px",
-                        "gutter": "24px",
-                        "container-max": "1280px"
-                    },
-                    "fontFamily": {
-                        "quote": ["Lora"],
-                        "hero-headline": ["Lora"],
-                        "hero-headline-mobile": ["Lora"],
-                        "body-md": ["Source Serif 4"],
-                        "h2-section": ["Lora"],
-                        "h3-sub": ["Lora"],
-                        "body-lg": ["Source Serif 4"],
-                        "h4-label": ["Inter"],
-                        "nav-link": ["Inter"],
-                        "caption": ["Inter"]
-                    },
-                    "fontSize": {
-                        "quote": ["22px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "hero-headline": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "600"}],
-                        "hero-headline-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
-                        "body-md": ["17px", {"lineHeight": "1.75", "fontWeight": "400"}],
-                        "h2-section": ["36px", {"lineHeight": "1.25", "fontWeight": "500"}],
-                        "h3-sub": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
-                        "body-lg": ["18px", {"lineHeight": "1.75", "fontWeight": "400"}],
-                        "h4-label": ["16px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
-                        "nav-link": ["14px", {"lineHeight": "1.0", "fontWeight": "500"}],
-                        "caption": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
-                    }
-                },
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#291801",
+                    "inverse-on-surface": "#f7f0e8",
+                    "tertiary": "#1d1d1a",
+                    "surface-container": "#f4ede5",
+                    "surface-dim": "#e0d9d1",
+                    "surface-container-low": "#faf2ea",
+                    "on-secondary-container": "#785e3e",
+                    "inverse-primary": "#c1c8c7",
+                    "on-tertiary-fixed": "#1c1c19",
+                    "surface-variant": "#e8e1d9",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#c1c8c7",
+                    "tertiary-fixed": "#e5e2dd",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#414848",
+                    "surface-tint": "#596060",
+                    "on-surface-variant": "#434848",
+                    "surface-bright": "#fff8f1",
+                    "surface": "#fff8f1",
+                    "outline": "#737878",
+                    "on-tertiary-fixed-variant": "#474743",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#e2c19b",
+                    "inverse-surface": "#33302b",
+                    "on-secondary-fixed-variant": "#594325",
+                    "on-background": "#1e1b17",
+                    "surface-container-highest": "#e8e1d9",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "primary": "#171e1e",
+                    "primary-container": "#2c3333",
+                    "tertiary-container": "#32322f",
+                    "background": "#fff8f1",
+                    "tertiary-fixed-dim": "#c9c6c2",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#c3c7c7",
+                    "primary-fixed": "#dde4e3",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#949b9b",
+                    "on-primary-fixed": "#161d1d",
+                    "secondary-container": "#fddab2",
+                    "surface-container-high": "#eee7df",
+                    "on-surface": "#1e1b17",
+                    "on-tertiary-container": "#9b9a95",
+                    "secondary-fixed": "#ffddb6",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#735a3a"
             },
-        }
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "container-max": "1120px",
+                    "reading-column": "720px",
+                    "stack-lg": "64px",
+                    "stack-md": "24px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Source Serif 4"],
+                    "display-lg": ["Source Serif 4"],
+                    "display-lg-mobile": ["Source Serif 4"],
+                    "headline-sm": ["Source Serif 4"],
+                    "label-caps": ["Source Sans 3"],
+                    "body-md": ["Source Sans 3"],
+                    "caption": ["Source Sans 3"],
+                    "body-lg": ["Source Sans 3"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-caps": ["13px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}],
+                    "body-md": ["17px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "caption": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
     </script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .condensed-heading {
-            font-stretch: 75%;
+        .vintage-overlay {
+            background-image: radial-gradient(circle at 2px 2px, rgba(115, 90, 58, 0.05) 1px, transparent 0);
+            background-size: 40px 40px;
         }
     </style>
 </head>
-<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed-dim selection:text-primary">
-<!-- Announcement Bar -->
-<div class="bg-ink text-white py-3 px-margin-desktop">
-<div class="max-w-container-max mx-auto flex items-center justify-center space-x-3 text-nav-link font-nav-link tracking-wide">
-<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
-<span>New book release: Men of the King →</span>
+<body class="bg-background text-on-surface font-body-md text-body-md overflow-x-hidden selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<a class="font-headline-sm text-headline-sm font-semibold text-primary tracking-tight" href="#">Michael's Hub</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-secondary font-semibold pb-1" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#books">Books</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#teachings">Teachings</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#writing">Writing</a>
+<a class="font-label-caps text-label-caps px-6 py-2 bg-primary text-on-primary hover:opacity-90 transition-all rounded-lg" href="#">Subscribe</a>
 </div>
-</div>
-<!-- TopNavBar Shell -->
-<header class="bg-inverse-surface border-b border-warm-taupe/30 sticky top-0 z-50">
-<nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
-<!-- Brand Logo -->
-<a class="font-h3-sub text-h3-sub text-primary-fixed-dim" href="/">
-                Michael Gremillion
-            </a>
-<!-- Desktop Links -->
-<div class="hidden md:flex items-center space-x-10">
-<div class="flex space-x-8">
-<a class="font-nav-link text-nav-link text-surface-variant hover:text-primary-fixed-dim transition-colors duration-200" href="#">Books</a>
-<a class="font-nav-link text-nav-link text-surface-variant hover:text-primary-fixed-dim transition-colors duration-200" href="#">Sermons</a>
-<a class="font-nav-link text-nav-link text-surface-variant hover:text-primary-fixed-dim transition-colors duration-200" href="#">About</a>
-</div>
-<!-- Trailing Action -->
-<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-[4px] font-nav-link text-nav-link hover:bg-opacity-90 transition-all">
-                    Subscribe
-                </button>
-</div>
-<!-- Mobile Menu Toggle -->
-<button class="md:hidden text-surface-variant">
+<button class="md:hidden text-primary">
 <span class="material-symbols-outlined">menu</span>
 </button>
+</div>
 </nav>
-</header>
 <!-- Hero Section -->
-<main class="relative bg-inverse-surface min-h-[870px] flex items-center overflow-hidden">
-<div class="max-w-container-max mx-auto w-full px-margin-desktop py-section-gap-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-<!-- Left Column: Content -->
-<div class="md:col-span-7 flex flex-col justify-center space-y-6 z-10">
-<h1 class="flex flex-col font-hero-headline text-hero-headline condensed-heading">
-<span class="font-light text-warm-gray uppercase tracking-[0.15em] text-[24px] md:text-[32px] mb-2">Faithful. Grounded.</span>
-<span class="font-black text-white leading-[1] md:leading-[0.95]">
-                        PASTORAL WISDOM<br/>
-                        FOR MODERN TIMES
-                    </span>
+<header class="relative pt-32 pb-stack-lg md:pt-48 md:pb-stack-lg px-margin-mobile md:px-gutter">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-stack-md items-center">
+<div class="lg:col-span-6 space-y-stack-md">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">The Voice of a Modern Scholar</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary max-w-lg">
+                    Ministry, Media, and the <span class="italic text-secondary">Written Word.</span>
 </h1>
-<p class="text-surface-variant font-body-lg text-body-lg max-w-xl opacity-90">
-                    A steady voice in a shifting world. Dedicated to equipping the church through clear theological insight, historical groundedness, and the warmth of a pastor's heart.
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md leading-relaxed">
+                    Bridging spiritual leadership with academic depth. Explore a collection of teachings, writings, and media designed for the contemplative heart.
                 </p>
-<div class="pt-8 flex flex-wrap gap-4">
-<button class="bg-secondary text-white px-8 py-4 rounded-[4px] font-h4-label text-h4-label hover:brightness-110 transition-all flex items-center">
-                        Explore Recent Sermons
-                        <span class="material-symbols-outlined ml-2">arrow_forward</span>
-</button>
-<button class="border border-outline-variant text-white px-8 py-4 rounded-[4px] font-h4-label text-h4-label hover:bg-white/5 transition-all">
-                        Read the Journal
-                    </button>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="px-8 py-4 bg-primary text-on-primary font-label-caps text-label-caps rounded-lg hover:bg-tertiary transition-all text-center" href="#writing">Read the Latest</a>
+<a class="px-8 py-4 border border-secondary text-secondary font-label-caps text-label-caps rounded-lg hover:bg-secondary/5 transition-all text-center" href="#books">View Library</a>
 </div>
 </div>
-<!-- Right Column: Tilted Photo -->
-<div class="md:col-span-5 relative flex justify-end">
-<div class="relative w-full max-w-[440px] transform -rotate-3 transition-transform hover:rotate-0 duration-500 group">
-<div class="aspect-[3/4] overflow-hidden rounded-sm border-[12px] border-warm-white shadow-2xl">
-<img alt="Michael Gremillion" class="w-full h-full object-cover grayscale brightness-95 group-hover:grayscale-0 transition-all duration-700" data-alt="A sophisticated, high-contrast editorial portrait of a mature man with a kind expression, seated in a sunlit study filled with leather-bound books. The lighting is soft and cinematic, casting gentle shadows that emphasize textures of parchment and wood. The style is faithful and grounded, utilizing an earthy color palette of deep olives and warm tans to create a timeless, stable aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9jkdPm22idPmsnL66RQQ71O3oRzhWTSFfM5PaZMewtG_skyvcdvv2H-NbG9qmDjb9MfYAf36Mrt3Mbsxt-cnm2WHdC34mhsRTHzTtEXjW6mg9uc22lLsg6nQ751gqAHkF64TBE8c9t_EjrxnbiLXCQ3OZ-4m_k8SCNJVrXYyS-10Uvo11wxXY8xR_u-ONXGlIWwO1N3aLSljtWpGPsbLne0N3UrUHSGD8Mu3gVaapDAQSwx8e3Uvp1sgIPrfixppRV1UhLI_LEek"/>
-</div>
-<!-- Caption Overlay -->
-<div class="absolute -bottom-6 -right-6 md:-right-12 bg-burnished-gold text-white px-6 py-3 shadow-lg">
-<p class="font-h4-label text-[12px] tracking-[0.2em] uppercase">Study Sessions / 2026</p>
+<div class="lg:col-span-6 mt-12 lg:mt-0 relative group">
+<div class="absolute -inset-4 bg-surface-container rounded-xl -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+<img alt="Cinematic Portrait" class="relative w-full h-[500px] object-cover rounded-xl shadow-lg border border-outline-variant/20" data-alt="A cinematic, high-contrast portrait of a man in a sophisticated, scholarly study environment. He is wearing a dark, minimal turtleneck, looking slightly away from the camera with a thoughtful expression. The lighting is soft and directional, coming from a side window, highlighting the texture of old book spines on mahogany shelves in the background. The overall mood is quiet, intellectual, and dignified, utilizing a warm vintage paper and scholar ink color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcH-t2608TCtVgG0SbGTz9w72cbp-y8bkaULdwNZsYMYh2OmT6Yod6ReLilCi_yErCUInc7ZFirSuVeklpShomQoix_WLCKW2EiFAxbo959_zbE_0BfGgSrLAqlKyKAkH15tphNtaDTVBE9ZH_dRW0VYkVCnVCh3YyQ5GveqI1A4ZToH7VlT5vgB8u9i0RegrloinMENx6igEMPybW5wdWsIgCmUny7pE3NVP5M2vKyiqKopSR8loLwmKk3veNiD8SmdUn8X6w"/>
 </div>
 </div>
-</div>
-</div>
-<!-- Atmospheric Elements -->
-<div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-black/20 to-transparent pointer-events-none"></div>
-</main>
-<!-- Bottom CTA Strip (Pinned to bottom of hero/viewport context) -->
-<section class="w-full bg-burnished-gold py-6 flex items-center justify-between px-margin-desktop">
-<div class="max-w-container-max mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-4">
-<h3 class="font-h3-sub text-white text-[20px] tracking-wide">Stay anchored in the word.</h3>
-<div class="flex w-full md:w-auto items-center space-x-4">
-<span class="hidden md:block font-h4-label text-white/80 uppercase text-[12px] tracking-widest">Receive "In the Midst" Weekly</span>
-<button class="w-full md:w-auto bg-ink text-white px-10 py-3 font-h4-label text-h4-label uppercase tracking-widest hover:bg-secondary transition-colors">
-                    Join the Newsletter
-                </button>
+</header>
+<!-- Quote Block -->
+<section class="bg-surface-container py-stack-lg vintage-overlay">
+<div class="max-w-reading-column mx-auto px-margin-mobile">
+<div class="border-l-4 border-secondary pl-8 py-4">
+<blockquote class="font-headline-sm text-headline-sm italic text-on-surface leading-relaxed">
+                    "True ministry is not found in the volume of the voice, but in the weight of the truth spoken in the silence of understanding."
+                </blockquote>
+<cite class="block mt-6 font-label-caps text-label-caps text-on-surface-variant">— Michael’s Hub Notes, 2024</cite>
 </div>
 </div>
 </section>
-<!-- Secondary Navigation Anchor -->
-<div class="py-20 bg-surface border-t border-warm-taupe/10">
-<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-12">
-<div class="col-span-2">
-<h4 class="font-h4-label text-primary uppercase mb-4 opacity-60">Currently Featured</h4>
-<div class="space-y-4">
-<div class="p-6 bg-warm-white border border-warm-taupe/20 rounded-lg group cursor-pointer hover:border-secondary transition-all">
-<span class="text-muted-rust font-h4-label text-[13px] uppercase tracking-widest mb-2 block">New Monograph</span>
-<h5 class="font-h3-sub text-ink text-[22px] group-hover:text-secondary transition-colors">The Weight of Witness: Theology for the Public Square</h5>
+<!-- The Library (Books) -->
+<section class="py-stack-lg px-margin-mobile md:px-gutter bg-background" id="books">
+<div class="max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps text-secondary">The Library</span>
+<h2 class="font-headline-md text-headline-md text-primary">Published Works</h2>
+</div>
+<a class="hidden sm:flex items-center gap-2 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">
+                    View Amazon Author Page
+                    <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Book Card 1 -->
+<div class="group flex flex-col items-center text-center">
+<div class="relative w-full aspect-[2/3] mb-6 overflow-hidden bg-surface-container rounded shadow-md group-hover:shadow-xl transition-all duration-500">
+<img alt="Book Cover 1" class="w-full h-full object-cover" data-alt="A professional book cover design titled The Silence of the Divine. The cover features a minimalist landscape of a misty mountain range at dawn in muted earthy tones. The typography is elegant and serif-based, centered in the upper third. The lighting is atmospheric and serene, evoking a sense of spiritual depth and scholarly research. The texture of the cover looks like premium matte paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuQgDHj8Ifa4mVJl0n7iO25ayUr0j4Zjr_7llMDVdFBVNEODbi-WcYc8pB2QJehn9oIXJijuywhm8WdFk2vm1lbwX6UrWMkF6iCZDA_d_u-mHlE3KncgAWdbNELu3WwGGbhuOIv1g0C3KrQHi3M6zqbRskyDrdsgwYv2-kLSBq1PemQ4kchKxQNS3rBZFZbK9qPbONTfj0Zo-ksQkr-YWLH_Z_PTVM1AQtnNWe30ePHy9v1Gw8IUHCT3WOGkrFYvfkAFYVSyA6"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="px-6 py-3 bg-on-primary text-primary font-label-caps text-label-caps rounded-lg">Quick Preview</button>
 </div>
 </div>
+<span class="font-label-caps text-label-caps text-secondary mb-1">New Release</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">The Silence of the Divine</h3>
+<p class="font-caption text-caption text-on-surface-variant max-w-xs mb-4">An exploration of contemplative prayer in a loud and digital world.</p>
+<a class="font-label-caps text-label-caps border border-primary px-4 py-2 hover:bg-primary hover:text-on-primary transition-all" href="#">Order Now</a>
+</div>
+<!-- Book Card 2 -->
+<div class="group flex flex-col items-center text-center">
+<div class="relative w-full aspect-[2/3] mb-6 overflow-hidden bg-surface-container rounded shadow-md group-hover:shadow-xl transition-all duration-500">
+<img alt="Book Cover 2" class="w-full h-full object-cover" data-alt="A classic, academic book cover titled Foundations of Grace. The design utilizes a deep charcoal background with elegant gold foil-style lettering for the title. A central crest or symbolic icon of an ancient pen is subtly embossed. The lighting suggests a warm library glow reflecting off the surface, creating a timeless and authoritative aesthetic consistent with spiritual literature." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlPGzL5J4FUFFaTCsSNVA_win2lCmwImforDbzxoLQBdsEex8y7FEdbWt4u1UIbwjKo77kG7yvphZ7ahP8pHE9vq8qPhSKut2yorCK9DdwdTVqgd2XcrK-zRq9IGZrqtlUD4cwasaoqBgHAN7EcElXB9ID0nPtaxiFGUM5xvdDVFa3hdgXoc9ynqSdOrb2ToSOi65dwSJM_D3pwvETv-7H_6pB0MeAgYyXuOq4Ipi53Me2THtuWFkIc9vBr0GKxsrGqSeXfzBR"/>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-1">Christian Living</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Foundations of Grace</h3>
+<p class="font-caption text-caption text-on-surface-variant max-w-xs mb-4">Restoring the ancient paths of faithful service in the modern era.</p>
+<a class="font-label-caps text-label-caps border border-primary px-4 py-2 hover:bg-primary hover:text-on-primary transition-all" href="#">Order Now</a>
+</div>
+<!-- Book Card 3 -->
+<div class="group flex flex-col items-center text-center">
+<div class="relative w-full aspect-[2/3] mb-6 overflow-hidden bg-surface-container rounded shadow-md group-hover:shadow-xl transition-all duration-500">
+<img alt="Book Cover 3" class="w-full h-full object-cover" data-alt="A modern editorial book cover titled Words from the Wilderness. The background shows a vast, sun-bleached desert under a clear sky. The text is bold and modern, using a mix of clean sans-serif and handwritten scripts. The color palette is composed of warm beiges, soft creams, and striking black accents, reflecting a journey of personal and spiritual discovery in solitude." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiQthWeNBMWLPIOHSdf-Jst1wDIlWfTTSRrmmhYLXisjJEX93FSzl2qf6vJ1Vc0vojQOy6kUK8VIiHvc1egfluH4ZFAlktdRXrSs9FjUfE9Z_TXr6cxZgiarYEdMbrtHtsyOg4DYLfuwDD8BDFv5yyCndm5ZKFkE4JFPSEAE5KwaufysJsQpcYUNJEHkhJsXqA0aXjEMlmNC0IllAa-tb51NnaTDVjqK0Tu03Y-yzXxlv3wRU2ES4WBQ2uYE-jKdGVvUDQpxbl"/>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-1">Devotional</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Words from the Wilderness</h3>
+<p class="font-caption text-caption text-on-surface-variant max-w-xs mb-4">Finding the presence of God in the dry seasons of the soul.</p>
+<a class="font-label-caps text-label-caps border border-primary px-4 py-2 hover:bg-primary hover:text-on-primary transition-all" href="#">Order Now</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Teachings (YouTube) -->
+<section class="py-stack-lg px-margin-mobile md:px-gutter bg-surface-container" id="teachings">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 max-w-2xl mx-auto space-y-4">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Apostolic Media</span>
+<h2 class="font-headline-md text-headline-md text-primary">Recent Teachings</h2>
+<p class="text-on-surface-variant">Sermons and talks captured in high-definition, bringing the message of the gospel into a cinematic visual medium.</p>
+</div>
+<div class="relative group aspect-video w-full rounded-xl overflow-hidden shadow-2xl mb-12 cursor-pointer">
+<img alt="Featured Sermon" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic still from a high-production video sermon. The frame captures a focused man speaking behind a minimalist wood lectern, bathed in a warm spotlight against a deep, shadowed background. Soft dust motes dance in the light rays. The composition is artistic and intentional, resembling a still from a high-end documentary. The color palette emphasizes warm oranges and deep blacks, conveying a sense of profound spiritual insight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpsFyUw39Onax79PwD_etPguw0SwsjVeLKoV34X1FFLmL9bvJYBuw5n7nAE4zCId738YKPpuASFo-gSqq5kgc-_1Nthcqd8YPImJPp1KmCuB33TTGsG8-ePir0JnIUxRokblXzezYfxwq__2U3ysrYV4VIvysOwrTg2KZG9Go85kM51OFlGPDINMjJxUo9A0omA7HxNMXuAW-m86pt9XMOy-KDT_VZ-Ok1VKIjOOFg86uFnVI4dHDiMXwljeVoK1YTX49VuA16"/>
+<div class="absolute inset-0 bg-primary/40 flex items-center justify-center group-hover:bg-primary/20 transition-all">
+<div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center text-on-primary shadow-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[40px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black/80 to-transparent text-white">
+<span class="font-label-caps text-label-caps text-secondary-fixed">Featured Message</span>
+<h3 class="font-headline-md text-headline-md mt-2">The Architecture of Faith: Rebuilding the Foundations</h3>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex gap-6 items-start p-4 bg-surface rounded-xl hover:shadow-md transition-all">
+<div class="shrink-0 w-32 aspect-video bg-surface-container-high rounded overflow-hidden">
+<img alt="Teaching thumbnail" class="w-full h-full object-cover" data-alt="A thumbnail for a spiritual teaching video. It shows an open ancient book under a warm reading lamp. The background is a blurred library. The lighting is cozy and focused. The colors are earthy and warm, matching the scholar-sanctuary aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2N_nkq2Q_Un5OoKFjvufWgjXyVjYHF3ZFrV3nLq36bktzPYqlY6hso49G3S8ChVGt6rU-fyl6q-33WOopi-KmYQPhyjoU779v2khdawlTxulaMcBNpcYczAnZB7dEsBTf3A9hpbSsrgvXfOjfYJyqVSuiqjrOLgPbwAb_lIfnPKbWPWCPH8Q2AjIauMNg9rD9WzLeyhL-ADkeRcnRHVNR6ZMdNcOBEz2s0LtFZJYC1CJLYQtl46ciH8YAemKp8h5zeJADKTQP"/>
 </div>
 <div>
-<h4 class="font-h4-label text-primary uppercase mb-4 opacity-60">Resources</h4>
-<ul class="space-y-2 font-body-md text-on-surface-variant">
-<li><a class="hover:text-primary transition-colors" href="#">Digital Archives</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Lecture Notes</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Reading Lists</a></li>
-</ul>
+<h4 class="font-headline-sm text-[20px] leading-tight text-primary mb-1">Morning Liturgy: Finding Peace</h4>
+<span class="font-caption text-caption text-on-surface-variant">March 12, 2024 • 15 mins</span>
+</div>
+</div>
+<div class="flex gap-6 items-start p-4 bg-surface rounded-xl hover:shadow-md transition-all">
+<div class="shrink-0 w-32 aspect-video bg-surface-container-high rounded overflow-hidden">
+<img alt="Teaching thumbnail" class="w-full h-full object-cover" data-alt="A thumbnail for a talk about community. It captures a diverse group of people engaged in deep conversation in a warmly lit living room. The style is natural and candid, with soft cinematic lighting. The colors are rich and inviting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBOY23b_PAmsVcqSZvmNxmjRunCCJ3Y4iByE8f8duHG_MiHp8QtG71jvRvDObkWBdtRr-nsNmh8wIe3d_NadcofgXQPVjhy4IPsnhvGmq1RuBR2wE9Chaxt_ss3F0qS8BCkrGwpXQ4oLL_5SUSNpOJBaqymPz5_AhtddslKS6M_fXzXz6hNfbcV-6aA6939uVL4JeI7LkJZIWorYX0bmq3lTQnUJsbrr_m4NUqEmK6VYGw_L_LiJsstHqL57Z5wSu5ttelCmaq"/>
 </div>
 <div>
-<h4 class="font-h4-label text-primary uppercase mb-4 opacity-60">Connect</h4>
-<ul class="space-y-2 font-body-md text-on-surface-variant">
-<li><a class="hover:text-primary transition-colors" href="#">Speaking Requests</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Email Michael</a></li>
-</ul>
+<h4 class="font-headline-sm text-[20px] leading-tight text-primary mb-1">The Power of Authentic Community</h4>
+<span class="font-caption text-caption text-on-surface-variant">Feb 28, 2024 • 42 mins</span>
 </div>
 </div>
 </div>
+</div>
+</section>
+<!-- From the Desk (Substack) -->
+<section class="py-stack-lg px-margin-mobile md:px-gutter" id="writing">
+<div class="max-w-reading-column mx-auto">
+<div class="flex flex-col items-center text-center mb-16 space-y-4">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">The Substack</span>
+<h2 class="font-headline-md text-headline-md text-primary">From the Desk</h2>
+<div class="w-12 h-1 bg-secondary mx-auto"></div>
+</div>
+<div class="space-y-12">
+<!-- Article 1 -->
+<article class="group cursor-pointer">
+<div class="flex items-center gap-4 mb-3">
+<span class="font-label-caps text-label-caps px-2 py-1 bg-surface-container text-on-surface-variant rounded">Theology</span>
+<time class="font-caption text-caption text-on-surface-variant">October 14, 2024</time>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 group-hover:text-secondary transition-colors">Beyond the Digital Veil: The Need for Tangible Grace</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">
+                        In an era where our lives are increasingly mediated through glass screens and silicon chips, we find ourselves yearning for something we cannot quite name. It is the weight of a hand on a shoulder, the texture of a printed page, and the physical presence of a brother or sister in the faith...
+                    </p>
+<div class="flex items-center gap-2 font-label-caps text-label-caps text-primary font-semibold group-hover:gap-4 transition-all">
+                        Keep Reading <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</article>
+<hr class="border-outline-variant/30"/>
+<!-- Article 2 -->
+<article class="group cursor-pointer">
+<div class="flex items-center gap-4 mb-3">
+<span class="font-label-caps text-label-caps px-2 py-1 bg-surface-container text-on-surface-variant rounded">Leadership</span>
+<time class="font-caption text-caption text-on-surface-variant">September 29, 2024</time>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 group-hover:text-secondary transition-colors">The Lead of the Servant: Rethinking Apostolic Authority</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">
+                        When we talk about leadership in the church today, we often borrow the vernacular of the corporate boardroom. We speak of vision, strategy, and deliverables. But the model handed down to us by the apostles is one characterized by an altogether different set of virtues...
+                    </p>
+<div class="flex items-center gap-2 font-label-caps text-label-caps text-primary font-semibold group-hover:gap-4 transition-all">
+                        Keep Reading <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</article>
+<hr class="border-outline-variant/30"/>
+<!-- Article 3 -->
+<article class="group cursor-pointer">
+<div class="flex items-center gap-4 mb-3">
+<span class="font-label-caps text-label-caps px-2 py-1 bg-surface-container text-on-surface-variant rounded">Culture</span>
+<time class="font-caption text-caption text-on-surface-variant">September 12, 2024</time>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 group-hover:text-secondary transition-colors">Finding God in the Mundane</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">
+                        We often look for the divine in the spectacular—the mountain top experience, the miraculous intervention, the grand revelation. Yet, the vast majority of our spiritual formation happens in the ordinary rhythms of a Tuesday afternoon...
+                    </p>
+<div class="flex items-center gap-2 font-label-caps text-label-caps text-primary font-semibold group-hover:gap-4 transition-all">
+                        Keep Reading <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</article>
+</div>
+<div class="mt-16 text-center">
+<a class="inline-block px-10 py-5 border-2 border-primary font-label-caps text-label-caps text-primary hover:bg-primary hover:text-on-primary transition-all rounded-lg" href="#">Browse Full Archive</a>
+</div>
+</div>
+</section>
+<!-- Call to Action (Newsletter) -->
+<section class="py-stack-lg px-margin-mobile md:px-gutter bg-primary text-on-primary vintage-overlay">
+<div class="max-w-container-max mx-auto text-center py-stack-md bg-tertiary rounded-xl relative overflow-hidden shadow-2xl">
+<!-- Decorative Background Element -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="relative z-10 max-w-lg mx-auto space-y-6">
+<h2 class="font-headline-md text-headline-md text-on-primary">Join the Inner Circle</h2>
+<p class="font-body-md text-body-md text-on-primary/70">
+                    Get weekly reflections on faith, culture, and the craft of writing delivered straight to your inbox. No noise, just substance.
+                </p>
+<form class="flex flex-col sm:flex-row gap-2 mt-8">
+<input class="flex-grow bg-white/5 border-b border-white/30 focus:border-secondary focus:ring-0 text-on-primary placeholder:text-white/30 py-3 font-body-md transition-all outline-none" placeholder="Enter your email address" type="email"/>
+<button class="bg-secondary text-on-secondary px-8 py-3 font-label-caps text-label-caps rounded-lg hover:brightness-110 transition-all" type="submit">Subscribe Now</button>
+</form>
+<p class="font-caption text-caption text-white/40">Join 15,000+ readers. Unsubscribe at any time.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container py-stack-lg mt-stack-lg border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<div class="flex flex-col items-center md:items-start space-y-4">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Michael's Hub</span>
+<p class="font-body-md text-body-md text-on-surface-variant text-center md:text-left max-w-xs">
+                        Equipping the saints through apostolic media and the written word.
+                    </p>
+</div>
+<div class="flex flex-col items-center md:items-end space-y-6">
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full flex items-center justify-center bg-surface hover:bg-secondary-container transition-all group" href="#">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-secondary-container">smart_display</span>
+</a>
+<a class="w-10 h-10 rounded-full flex items-center justify-center bg-surface hover:bg-secondary-container transition-all group" href="#">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-secondary-container">edit_note</span>
+</a>
+<a class="w-10 h-10 rounded-full flex items-center justify-center bg-surface hover:bg-secondary-container transition-all group" href="#">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-secondary-container">menu_book</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-stack-lg pt-stack-sm border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
+<p class="font-caption text-caption text-on-surface-variant">© 2024 Michael's Apostolic Media. All rights reserved.</p>
+<p class="font-caption text-caption text-on-surface-variant italic">Refined in the pursuit of truth.</p>
+</div>
+</div>
+</footer>
 <script>
-        // Micro-interaction: Smooth transition for the hero photo on scroll
+        // Simple scroll behavior for navigation background
         window.addEventListener('scroll', () => {
-            const photoContainer = document.querySelector('.transform.-rotate-3');
-            if(photoContainer) {
-                const scrollY = window.scrollY;
-                const rotation = -3 + (scrollY * 0.01);
-                const cappedRotation = Math.min(Math.max(rotation, -3), 0);
-                photoContainer.style.transform = `rotate(${cappedRotation}deg)`;
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-sm');
+                nav.classList.replace('bg-surface/80', 'bg-surface/95');
+            } else {
+                nav.classList.remove('shadow-sm');
+                nav.classList.replace('bg-surface/95', 'bg-surface/80');
             }
+        });
+
+        // Add reveal animation to sections
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
         });
     </script>
 </body></html>
