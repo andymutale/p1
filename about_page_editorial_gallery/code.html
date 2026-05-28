@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | Michael Gremillion</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;family=Inter:wght@400;500;600&amp;family=Source+Serif+4:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#141f01",
+                        "primary-container": "#3d4a25",
+                        "secondary-fixed": "#d8eaad",
+                        "primary": "#273311",
+                        "ink": "#1E1B17",
+                        "on-tertiary-fixed": "#271900",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#fdf9f3",
+                        "parchment": "#EDE8DF",
+                        "on-surface": "#1c1c18",
+                        "warm-white": "#FDFAF6",
+                        "inverse-primary": "#bdcd9c",
+                        "on-secondary-fixed-variant": "#3e4c1e",
+                        "on-primary-container": "#aab98a",
+                        "surface-container-low": "#f7f3ed",
+                        "on-secondary-fixed": "#151f00",
+                        "surface": "#fdf9f3",
+                        "surface-variant": "#e6e2dc",
+                        "on-tertiary-container": "#d4ae69",
+                        "warm-gray": "#6B6560",
+                        "tertiary-container": "#5b4104",
+                        "surface-dim": "#ddd9d4",
+                        "secondary": "#556434",
+                        "tertiary": "#402c00",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#ebe8e2",
+                        "secondary-container": "#d8eaad",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#45483e",
+                        "tertiary-fixed-dim": "#e8c17a",
+                        "on-primary-fixed-variant": "#3e4b26",
+                        "surface-container": "#f1ede7",
+                        "inverse-surface": "#31302d",
+                        "surface-container-highest": "#e6e2dc",
+                        "secondary-fixed-dim": "#bccd93",
+                        "background": "#fdf9f3",
+                        "surface-tint": "#55633c",
+                        "primary-fixed-dim": "#bdcd9c",
+                        "on-secondary-container": "#5b6a39",
+                        "on-error-container": "#93000a",
+                        "muted-rust": "#8B3E2F",
+                        "on-background": "#1c1c18",
+                        "primary-fixed": "#d9e9b7",
+                        "inverse-on-surface": "#f4f0ea",
+                        "outline": "#76786d",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c6c8ba",
+                        "tertiary-fixed": "#ffdea7",
+                        "surface-container-lowest": "#ffffff",
+                        "warm-taupe": "#D5CFC6",
+                        "burnished-gold": "#B8860B",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#5d4206"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "section-gap-desktop": "120px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "card-padding": "24px",
+                        "container-max": "1280px",
+                        "section-gap-mobile": "64px"
+                    },
+                    "fontFamily": {
+                        "hero-headline-mobile": ["Lora"],
+                        "h2-section": ["Lora"],
+                        "body-md": ["Source Serif 4"],
+                        "nav-link": ["Inter"],
+                        "caption": ["Inter"],
+                        "quote": ["Lora"],
+                        "hero-headline": ["Lora"],
+                        "body-lg": ["Source Serif 4"],
+                        "h3-sub": ["Lora"],
+                        "h4-label": ["Inter"]
+                    },
+                    "fontSize": {
+                        "hero-headline-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "h2-section": ["36px", {"lineHeight": "1.25", "fontWeight": "500"}],
+                        "body-md": ["17px", {"lineHeight": "1.75", "fontWeight": "400"}],
+                        "nav-link": ["14px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                        "caption": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "quote": ["22px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "hero-headline": ["64px", {"lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.75", "fontWeight": "400"}],
+                        "h3-sub": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "h4-label": ["16px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .serif-italic { font-style: italic; }
+        .text-ink { color: #1E1B17; }
+        .bg-cream { background-color: #F7F3ED; }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Top Navigation -->
+<nav class="bg-surface dark:bg-inverse-surface border-b border-warm-taupe/30 sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-h3-sub text-h3-sub text-primary dark:text-primary-fixed-dim font-bold" href="/">Michael Gremillion</a>
+<div class="hidden md:flex gap-8">
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-200" href="#">Books</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-200" href="#">Sermons</a>
+<a class="font-nav-link text-nav-link text-primary dark:text-primary-fixed-dim border-b-2 border-primary" href="#">About</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-200" href="#">Resources</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded font-nav-link text-nav-link hover:bg-primary-container transition-all duration-200">
+                Subscribe
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-surface-container-low pt-section-gap-mobile md:pt-section-gap-desktop pb-section-gap-mobile md:pb-section-gap-desktop overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="order-2 md:order-1">
+<span class="font-h4-label text-h4-label text-secondary uppercase tracking-widest mb-4 block">Faithful &amp; Grounded</span>
+<h1 class="font-hero-headline text-hero-headline-mobile md:text-hero-headline text-ink mb-6">A life spent in pursuit of the <span class="serif-italic">eternal.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-8">Michael Gremillion serves as the Lead Pastor at Fairfield Baptist Church, an author, and a student of the quiet path, dedicated to intellectual clarity and spiritual depth.</p>
+</div>
+<div class="order-1 md:order-2 relative">
+<div class="aspect-[4/5] bg-warm-taupe/20 rounded-lg overflow-hidden border border-warm-taupe/30 shadow-sm">
+<img alt="Michael Gremillion" class="w-full h-full object-cover" data-alt="A warm, high-end editorial portrait of a middle-aged man with a kind expression, seated in a sunlit home library filled with floor-to-ceiling bookshelves and rich wood textures. He wears a classic navy blazer and spectacles, looking candidly away from the camera. The lighting is soft and golden, streaming from a nearby window, creating a serene and intellectual atmosphere with deep olive and cream color tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwQ-3ZhT8aie_Z7kgKfZ_1dfUhiPHnRWeWulFQC0NZE25YAP93WjmulRgAnEDCX3xQqJXmeeD7o4Ftl2y0FQkwoJGRLRIClcmZX0uvTLzQslsyhFpkMIrBnNbyZjb_z_ttXnS3iBOZqp1Nw11iwkiKzzI0eylwZI5XaZ2UHoc3sr1h0-PLZXEhh6Jm-bY2sx-msD1QoIRbn5emibN9kAHaNQgexsGxAv1JpvOfF0SBe0-tOr4BE4LO00z9yRV4h2t2L2Sfng8b004"/>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-8 -left-8 w-32 h-32 bg-parchment rounded-full -z-10 hidden md:block opacity-50"></div>
+</div>
+</div>
+</section>
+<!-- Narrative Bio & Sidebar -->
+<section class="py-section-gap-desktop bg-background">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Main Narrative Content -->
+<div class="lg:col-span-8">
+<h2 class="font-h2-section text-h2-section text-ink mb-10">The Journey of Faith</h2>
+<div class="max-w-2xl space-y-8">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed"><span class="float-left text-7xl font-hero-headline mr-4 leading-[0.8] text-[#5C6B3A]">F</span>or over two decades, Michael has dedicated his life to the ministry of the Word and the care of souls. His journey began in the quiet rural landscapes of his youth, where he first discovered the profound connection between nature, literature, and the divine presence. This early grounding has shaped a ministry that values permanence over trends and depth over volume.</p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                            As the Lead Pastor at Fairfield Baptist, Michael leads a vibrant community with a focus on historical orthodoxy and contemporary application. He believes that the ancient truths of scripture provide the most relevant answers for the modern heart, offering a stable anchor in an increasingly transient world.
+                        </p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                            Beyond the pulpit, Michael is a prolific writer and researcher. His work explores the intersection of theology and the "quiet life," advocating for a spirituality that is both intellectually rigorous and practically accessible. He finds his greatest joy in his family and the slow, deliberate work of tending to the Fairfield congregation.
+                        </p>
+</div>
+</div>
+<!-- Quick Facts Sidebar -->
+<aside class="lg:col-span-4 mt-12 lg:mt-0">
+<div class="border border-warm-taupe p-card-padding rounded shadow-sm bg-surface-container-low" style="border: 1px solid rgba(213, 207, 198, 0.4);">
+<h3 class="font-h4-label text-h4-label text-ink border-b border-warm-taupe pb-4 mb-6">Quick Facts</h3>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-burnished-gold">church</span>
+<div>
+<p class="font-nav-link text-nav-link font-bold text-ink">Lead Pastor</p>
+<p class="font-caption text-caption text-on-surface-variant">Fairfield Baptist Church</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-burnished-gold">book</span>
+<div>
+<p class="font-nav-link text-nav-link font-bold text-ink">Author</p>
+<p class="font-caption text-caption text-on-surface-variant">4 Published Volumes on Theology</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-burnished-gold">family_restroom</span>
+<div>
+<p class="font-nav-link text-nav-link font-bold text-ink">Family</p>
+<p class="font-caption text-caption text-on-surface-variant">Husband and Father of three</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-burnished-gold">school</span>
+<div>
+<p class="font-nav-link text-nav-link font-bold text-ink">Education</p>
+<p class="font-caption text-caption text-on-surface-variant">Th.M, PhD in Historical Theology</p>
+</div>
+</div>
+</div>
+<div class="mt-8 border-warm-taupe">
+<a class="text-primary font-nav-link text-nav-link flex items-center gap-2 hover:underline" href="#">
+                                View Full Portfolio 
+                                <span class="material-symbols-outlined text-[18px] text-burnished-gold">arrow_forward</span>
+</a>
+</div>
+</div>
+</aside>
+</div>
+</section>
+<!-- Featured Pull Quote -->
+<section class="py-section-gap-desktop bg-parchment/30">
+<div class="max-w-3xl mx-auto px-margin-mobile text-center">
+<span class="material-symbols-outlined text-burnished-gold text-6xl block mb-4" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<blockquote class="font-quote text-quote text-ink serif-italic leading-relaxed mb-6">
+                    "Faith is not the absence of questions, but the presence of a Anchor that holds firm when the tide of the world pulls hardest. True peace is found not in escaping the noise, but in learning to hear the Still Small Voice within it."
+                </blockquote>
+<cite class="font-h4-label text-h4-label uppercase tracking-widest text-secondary block">— From "The Quiet Path" (2022)</cite>
+</div>
+</section>
+<!-- Candid Gallery -->
+<section class="py-section-gap-desktop">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-h2-section text-h2-section text-ink mb-4">Moments of Ministry</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">A glimpse into the life and work at Fairfield.</p>
+</div>
+<!-- Editorial Masonry-style layout -->
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+<!-- Left Focal Image (60% width roughly via 3/5 cols) -->
+<div class="lg:col-span-3 space-y-4">
+<div class="rounded-lg overflow-hidden border border-warm-taupe/30 shadow-sm bg-surface-container-low">
+<img alt="Michael Preaching" class="w-full h-auto object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCzzffSvgCyeglZ9rsmCX1Cg40iy9UeMIwmVMi98vqrMVzEVUTnX-rzycGksAslbFRE-dYTwsoOkz9bo-XSd2rwe9DXndieCtoBopDow2ymc8kzMu3_6FgY5lEz9O7ohAIAOIggjmctN5qHo7dLWeQeaBkdcEx1mBqFmlvk6daayCMJIlNCF3J2JennG4CfOAj2qYDbhSxciaawRk8wM9HpfD5yK2ufska1Jt15SeXEbjPwoensn4d8Q2vdY8V-q1WoON84YBpPR0"/>
+</div>
+<p class="font-caption text-caption text-warm-gray italic">Sunday Morning at Fairfield Baptist.</p>
+</div>
+<!-- Right Staggered Stack (40% width roughly via 2/5 cols) -->
+<div class="lg:col-span-2 space-y-12">
+<!-- Image 2 -->
+<div class="space-y-4 lg:pt-12">
+<div class="rounded-lg overflow-hidden border border-warm-taupe/30 shadow-sm bg-surface-container-low aspect-square">
+<img alt="Michael Studying" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm2_lZq1820eVOccvFbbek3svGTOjlVB-bD-CyqowB9KGf2gvC-s4DvGFxzoxqhc8G1_8E-JuipfkC6OSCf5WersUrg77sizAk0mI92HIZPOQjUDP7P9wHuXimWjBxmgaXYIgcpOoyTpFjbGGZEi-vCN_l81dJ9keDMEAuL8CIIpjzz3qmHKHjmNbTCVwer9yom05X8SAHVdTUSqI7FN951uM9-Re4g5SB_k4m4Vk1o3auAagG6t9nDYoEvBCSHhy7IgWuNXaYOeA"/>
+</div>
+<p class="font-caption text-caption text-warm-gray italic">Moments of study and reflection.</p>
+</div>
+<!-- Image 3 -->
+<div class="rounded-lg overflow-hidden border border-warm-taupe/30 shadow-sm bg-surface-container-low aspect-[4/3] lg:ml-[-10%]">
+<img alt="Michael Outdoors" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG3ndLdB31X321qlvtQPI8CjrUt4OYD2L4rfh5GcwKw-jhsNfJCIDYek8-1gZHmXp0sLXhvkEMkCsXO0q26yl4BA21JquUfPP82DKWlNxGZK-0xn-RiHEH6k_JEbyTa__wuAifHkmrzfpPgTTUifezVCW2KeTyfyp3gcdXQ6i4xmG4oIjjnf_RAqtburfvn7mqvWolnW2wlaZKY4-nGMrLkVbRWw6FXb-xcwGvFsPINpheHsVB4P3VObCtDjsUOvxViSsuUuxNlKA"/>
+</div>
+<!-- Image 4 -->
+<div class="rounded-lg overflow-hidden border border-warm-taupe/30 shadow-sm bg-surface-container-low aspect-video">
+<img alt="Sunset at Fairfield" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ-62obxmtEjIIQbfl8oMLhhf5xrfTyEMZ5nofb4d9y2VD83v0QgfE3EO7ueK2b9mSFE2qFINJl7xVKWLbbT0L_bcoivnworrBGrpLjUZH4vw29e04e57T6zxOGiiE68OUtXvC-JsB_h5TnmnbXECAQxzjVEnYcHMyyA51duKpu8oqtmlUwhMQvlFaOmGZ0YOk-ML2nzICPiZ_FlSmwJ9rIySil9hqMYgyt6DUIS-qsMGzD64nbac-DVF8vaqbBtLhVaFwRyxnMVU"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-section-gap-desktop bg-surface-container-high border-y border-warm-taupe/20">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-h2-section text-h2-section text-ink mb-6">Stay Connected</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mb-10">
+                    Michael shares monthly reflections on the "quiet path" and ministry updates through his personal journal.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary text-on-primary px-8 py-3 rounded font-nav-link text-nav-link hover:bg-primary-container transition-all">Join the Journal</button>
+<button class="border border-primary text-primary px-8 py-3 rounded font-nav-link text-nav-link hover:bg-primary/5 transition-all">Contact Michael</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-inverse-surface border-t border-warm-taupe/30">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<p class="font-h3-sub text-h3-sub text-primary dark:text-primary-fixed-dim font-bold mb-6">Michael Gremillion</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                    Faithful, grounded, and warm leadership for the Fairfield community and beyond.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-h4-label text-h4-label text-ink mb-6 uppercase tracking-wider">Navigation</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-primary transition-all" href="#">Books</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-primary transition-all" href="#">Sermons</a></li>
+<li class=""><a class="font-body-md text-primary font-bold" href="#">About</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:underline decoration-primary transition-all" href="#">Resources</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-h4-label text-h4-label text-ink mb-6 uppercase tracking-wider">Legal</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-body-md text-on-surface-variant hover:underline decoration-primary transition-all" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:underline decoration-primary transition-all" href="#">Terms of Service</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:underline decoration-primary transition-all" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-h4-label text-h4-label text-ink mb-6 uppercase tracking-wider">Newsletter</h4>
+<p class="font-caption text-caption text-on-surface-variant mb-4">Subscribe for quarterly letters.</p>
+<div class="flex">
+<input class="bg-parchment border border-warm-taupe px-4 py-2 w-full text-nav-link rounded-l focus:ring-1 focus:ring-primary outline-none" placeholder="Your email" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-r hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-warm-taupe/20 py-8 text-center">
+<p class="font-caption text-caption text-on-surface-variant">© 2024 Michael Gremillion. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

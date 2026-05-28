@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Inter:wght@100..900&amp;family=Source+Serif+4:opsz,wght@8..60,400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-bright": "#fdf9f3",
+                      "primary-fixed": "#d9e9b7",
+                      "secondary-container": "#d8eaad",
+                      "on-error-container": "#93000a",
+                      "tertiary-container": "#5b4104",
+                      "secondary": "#556434",
+                      "error-container": "#ffdad6",
+                      "on-surface": "#1c1c18",
+                      "on-primary-fixed": "#141f01",
+                      "outline-variant": "#c6c8ba",
+                      "background": "#fdf9f3",
+                      "surface-container-highest": "#e6e2dc",
+                      "primary": "#273311",
+                      "surface-variant": "#e6e2dc",
+                      "inverse-primary": "#bdcd9c",
+                      "on-secondary-fixed": "#151f00",
+                      "tertiary-fixed": "#ffdea7",
+                      "on-primary-container": "#aab98a",
+                      "parchment": "#EDE8DF",
+                      "surface-container-low": "#f7f3ed",
+                      "warm-taupe": "#D5CFC6",
+                      "secondary-fixed": "#d8eaad",
+                      "on-tertiary-fixed-variant": "#5d4206",
+                      "ink": "#1E1B17",
+                      "on-background": "#1c1c18",
+                      "on-tertiary-container": "#d4ae69",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#45483e",
+                      "tertiary-fixed-dim": "#e8c17a",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed": "#271900",
+                      "tertiary": "#402c00",
+                      "on-secondary-fixed-variant": "#3e4c1e",
+                      "on-secondary-container": "#5b6a39",
+                      "warm-gray": "#6B6560",
+                      "surface": "#fdf9f3",
+                      "inverse-surface": "#31302d",
+                      "secondary-fixed-dim": "#bccd93",
+                      "on-primary": "#ffffff",
+                      "outline": "#76786d",
+                      "on-error": "#ffffff",
+                      "inverse-on-surface": "#f4f0ea",
+                      "surface-tint": "#55633c",
+                      "surface-dim": "#ddd9d4",
+                      "muted-rust": "#8B3E2F",
+                      "primary-container": "#3d4a25",
+                      "warm-white": "#FDFAF6",
+                      "surface-container-high": "#ebe8e2",
+                      "error": "#ba1a1a",
+                      "primary-fixed-dim": "#bdcd9c",
+                      "surface-container": "#f1ede7",
+                      "on-primary-fixed-variant": "#3e4b26"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap-mobile": "64px",
+                      "section-gap-desktop": "120px",
+                      "card-padding": "24px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "h3-sub": ["Lora"],
+                      "h2-section": ["Lora"],
+                      "quote": ["Lora"],
+                      "h4-label": ["Inter"],
+                      "caption": ["Inter"],
+                      "body-md": ["Source Serif 4"],
+                      "hero-headline-mobile": ["Lora"],
+                      "nav-link": ["Inter"],
+                      "hero-headline": ["Lora"],
+                      "body-lg": ["Source Serif 4"],
+                      "condensed": ["Inter", "sans-serif"]
+              },
+              "fontSize": {
+                      "h3-sub": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                      "h2-section": ["36px", {"lineHeight": "1.25", "fontWeight": "500"}],
+                      "quote": ["22px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "h4-label": ["16px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                      "caption": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "body-md": ["17px", {"lineHeight": "1.75", "fontWeight": "400"}],
+                      "hero-headline-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                      "nav-link": ["14px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                      "hero-headline": ["64px", {"lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "1.75", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .overflow-headline {
+            font-size: clamp(56px, 10vw, 130px);
+            line-height: 0.92;
+            letter-spacing: -0.04em;
+            font-weight: 900;
+            white-space: nowrap;
+        }
+        .editorial-grid-flush {
+            display: grid;
+            gap: 0;
+        }
+        @media (min-width: 768px) {
+            .editorial-grid-flush {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Bar -->
+<header class="bg-surface dark:bg-inverse-surface border-b border-warm-taupe/30 docked full-width top-0 sticky z-50">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-h3-sub text-h3-sub text-primary dark:text-primary-fixed-dim">Michael Gremillion</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Books</a>
+<a class="font-nav-link text-nav-link text-primary dark:text-primary-fixed-dim border-b-2 border-primary" href="#">Sermons</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">About</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Resources</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-[4px] font-nav-link text-nav-link hover:bg-primary-container transition-colors duration-150">
+                Subscribe
+            </button>
+</nav>
+</header>
+<main class="overflow-x-hidden pt-12 pb-section-gap-desktop">
+<!-- Giant Overflow Headline -->
+<section class="relative mb-8">
+<h1 class="overflow-headline font-condensed uppercase text-ink translate-x-margin-desktop md:translate-x-32">
+                LETTERS FROM THE STUDY
+            </h1>
+</section>
+<!-- Meta Row -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-16">
+<div class="border-t border-ink pt-4 flex justify-between items-center">
+<span class="font-h4-label text-h4-label uppercase text-warm-gray tracking-widest">Latest articles</span>
+<a class="font-h4-label text-h4-label text-ink hover:text-primary transition-all flex items-center gap-2 group" href="#">
+                    See all articles 
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Editorial Blog Grid -->
+<section class="px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
+<!-- Article Card 1 -->
+<article class="flex flex-col group cursor-pointer">
+<div class="h-[300px] w-full overflow-hidden mb-6 bg-parchment">
+<img alt="Spiritual depth journal entry" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6_dwVFhtxdNUzQ7mkIVenh-MqLf4Kg0l8oozPWwYS2uWmrZhOL3twXCmnTT_yvqq4Ccl2Vy5JfQBZ6OGmBKSutIQuI59BY4hObqUMJz7c7kpTYrStGvSObBzNmT5IXS1WTloSm8EC8aeMPVUdKvp_6URa-AyVwyCB6cHrxXflZEOH3AUkru9cUOh5vC34ZW2zZ-QpWdCUswe7mcECgc5y78XgCeRthoimqFlPGbZUQSu9KY4jcmOcSbVVCkeiEeQzm0EWnp-y8V8"/>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="font-caption text-caption text-warm-gray uppercase tracking-tighter">May 27, 2026</span>
+<h3 class="font-h3-sub text-h3-sub text-ink group-hover:text-primary transition-colors">The Weight of Silence in a Loud World</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Reflecting on the theological necessity of quiet spaces and how the modern rush erodes our ability to hear the divine whisper.</p>
+</div>
+</article>
+<!-- Article Card 2 -->
+<article class="flex flex-col group cursor-pointer">
+<div class="h-[300px] w-full overflow-hidden mb-6 bg-parchment relative">
+<div class="absolute inset-0 bg-ink/5 mix-blend-multiply"></div>
+<img alt="Classical library aesthetic" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6_dwVFhtxdNUzQ7mkIVenh-MqLf4Kg0l8oozPWwYS2uWmrZhOL3twXCmnTT_yvqq4Ccl2Vy5JfQBZ6OGmBKSutIQuI59BY4hObqUMJz7c7kpTYrStGvSObBzNmT5IXS1WTloSm8EC8aeMPVUdKvp_6URa-AyVwyCB6cHrxXflZEOH3AUkru9cUOh5vC34ZW2zZ-QpWdCUswe7mcECgc5y78XgCeRthoimqFlPGbZUQSu9KY4jcmOcSbVVCkeiEeQzm0EWnp-y8V8"/>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="font-caption text-caption text-warm-gray uppercase tracking-tighter">May 14, 2026</span>
+<h3 class="font-h3-sub text-h3-sub text-ink group-hover:text-primary transition-colors">Recovering the Lost Art of Catechesis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Why traditional methods of instruction are more relevant than ever for a generation seeking stable ground in shifting sands.</p>
+</div>
+</article>
+<!-- Article Card 3 -->
+<article class="flex flex-col group cursor-pointer">
+<div class="h-[300px] w-full overflow-hidden mb-6 bg-parchment">
+<img alt="Pastoral morning landscape" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6_dwVFhtxdNUzQ7mkIVenh-MqLf4Kg0l8oozPWwYS2uWmrZhOL3twXCmnTT_yvqq4Ccl2Vy5JfQBZ6OGmBKSutIQuI59BY4hObqUMJz7c7kpTYrStGvSObBzNmT5IXS1WTloSm8EC8aeMPVUdKvp_6URa-AyVwyCB6cHrxXflZEOH3AUkru9cUOh5vC34ZW2zZ-QpWdCUswe7mcECgc5y78XgCeRthoimqFlPGbZUQSu9KY4jcmOcSbVVCkeiEeQzm0EWnp-y8V8"/>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="font-caption text-caption text-warm-gray uppercase tracking-tighter">April 30, 2026</span>
+<h3 class="font-h3-sub text-h3-sub text-ink group-hover:text-primary transition-colors">Morning Liturgies and the Rhythm of Grace</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">How the small habits of our first waking hour shape the entire trajectory of our spiritual formation and mental clarity.</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Pull Quote Section -->
+<section class="py-section-gap-desktop px-margin-mobile flex justify-center text-center">
+<div class="max-w-[600px] relative">
+<span class="text-[80px] font-quote text-on-tertiary-container absolute -top-12 -left-8 opacity-20">“</span>
+<blockquote class="font-quote text-quote text-ink italic leading-relaxed">
+                    Theology is not merely the study of God, but the art of living in the light of His presence throughout every ordinary day.
+                </blockquote>
+<cite class="block mt-6 font-h4-label text-h4-label uppercase tracking-widest text-warm-gray not-italic">— Michael Gremillion</cite>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-inverse-surface border-t border-warm-taupe/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="font-h3-sub text-h3-sub text-primary dark:text-primary-fixed-dim mb-4">Michael Gremillion</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Faithful, grounded, and warm. Seeking spiritual depth and intellectual clarity in a modern world.</p>
+</div>
+<div class="md:col-span-1 flex flex-col gap-3">
+<h4 class="font-h4-label text-h4-label text-ink uppercase mb-2">Explore</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-primary" href="#">Books</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-primary" href="#">Sermons</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-primary" href="#">Resources</a>
+</div>
+<div class="md:col-span-1 flex flex-col gap-3">
+<h4 class="font-h4-label text-h4-label text-ink uppercase mb-2">Legal</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-primary" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-primary" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-primary" href="#">Contact</a>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-h4-label text-h4-label text-ink uppercase mb-4">The Newsletter</h4>
+<div class="flex flex-col gap-4">
+<input class="bg-parchment border-warm-taupe focus:ring-primary focus:border-primary rounded-[4px] font-body-md" placeholder="Email address" type="email"/>
+<button class="bg-primary text-on-primary py-3 rounded-[4px] font-h4-label text-h4-label uppercase tracking-widest hover:bg-primary-container transition-colors">Join the List</button>
+</div>
+</div>
+</div>
+<div class="border-t border-warm-taupe/10 py-8 px-margin-desktop max-w-container-max mx-auto flex justify-center text-center">
+<span class="font-caption text-caption text-warm-gray">© 2024 Michael Gremillion. All rights reserved.</span>
+</div>
+</footer>
+<script>
+        // Smooth scroll interaction for links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>

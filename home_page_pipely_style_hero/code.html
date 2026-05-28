@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Michael Gremillion | Faithful Insights &amp; Grounded Theology</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;family=Source+Serif+4:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#ebe8e2",
+                        "secondary": "#556434",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#45483e",
+                        "on-primary-fixed-variant": "#3e4b26",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#5b4104",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#55633c",
+                        "on-tertiary-fixed": "#271900",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1c1c18",
+                        "surface-container-highest": "#e6e2dc",
+                        "ink": "#1E1B17",
+                        "primary-fixed-dim": "#bdcd9c",
+                        "primary": "#273311",
+                        "surface-variant": "#e6e2dc",
+                        "parchment": "#EDE8DF",
+                        "surface-dim": "#ddd9d4",
+                        "outline": "#76786d",
+                        "on-tertiary-container": "#d4ae69",
+                        "surface-container": "#f1ede7",
+                        "on-primary-fixed": "#141f01",
+                        "primary-fixed": "#d9e9b7",
+                        "warm-white": "#FDFAF6",
+                        "outline-variant": "#c6c8ba",
+                        "tertiary": "#402c00",
+                        "secondary-fixed-dim": "#bccd93",
+                        "on-secondary-fixed-variant": "#3e4c1e",
+                        "tertiary-fixed": "#ffdea7",
+                        "secondary-fixed": "#d8eaad",
+                        "inverse-surface": "#31302d",
+                        "on-surface": "#1c1c18",
+                        "secondary-container": "#d8eaad",
+                        "tertiary-fixed-dim": "#e8c17a",
+                        "surface": "#fdf9f3",
+                        "surface-container-low": "#f7f3ed",
+                        "warm-gray": "#6B6560",
+                        "muted-rust": "#8B3E2F",
+                        "burnished-gold": "#9B7A3B",
+                        "inverse-on-surface": "#f4f0ea",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#5b6a39",
+                        "inverse-primary": "#bdcd9c",
+                        "on-tertiary-fixed-variant": "#5d4206",
+                        "background": "#fdf9f3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fdf9f3",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#151f00",
+                        "primary-container": "#3d4a25",
+                        "warm-taupe": "#D5CFC6",
+                        "on-primary-container": "#aab98a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "pipely": "12px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "card-padding": "24px",
+                        "margin-mobile": "20px",
+                        "section-gap-mobile": "64px",
+                        "section-gap-desktop": "120px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "quote": ["Lora"],
+                        "hero-headline": ["Lora"],
+                        "hero-headline-mobile": ["Lora"],
+                        "body-md": ["Source Serif 4"],
+                        "h2-section": ["Lora"],
+                        "h3-sub": ["Lora"],
+                        "body-lg": ["Source Serif 4"],
+                        "h4-label": ["Inter"],
+                        "nav-link": ["Inter"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "quote": ["22px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "hero-headline": ["64px", {"lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "hero-headline-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-md": ["17px", {"lineHeight": "1.75", "fontWeight": "400"}],
+                        "h2-section": ["36px", {"lineHeight": "1.25", "fontWeight": "500"}],
+                        "h3-sub": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.75", "fontWeight": "400"}],
+                        "h4-label": ["16px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "nav-link": ["14px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                        "caption": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .hero-vignette {
+            background: linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 100%);
+        }
+        .nav-floating {
+            box-shadow: 0 10px 40px -10px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation (Pipely Spec: Floating Card) -->
+<header class="fixed top-6 left-0 right-0 z-50 px-margin-mobile md:px-margin-desktop">
+<nav class="mx-auto max-w-container-max bg-white nav-floating rounded-pipely py-3 px-6 flex justify-between items-center">
+<!-- Brand Identity -->
+<div class="flex items-center gap-2">
+<span class="font-h3-sub text-h3-sub text-primary tracking-tight">Michael Gremillion</span>
+</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">BOOKS</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">SERMONS</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">ABOUT</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">RESOURCES</a>
+</div>
+<!-- CTA -->
+<div class="flex items-center gap-4">
+<button class="bg-burnished-gold text-white px-6 py-2 rounded-lg font-nav-link text-nav-link hover:brightness-105 transition-all">SUBSCRIBE</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<!-- Hero Section (Pipely Spec: Separate Card Below) -->
+<main class="pt-32 pb-section-gap-desktop px-margin-mobile md:px-margin-desktop">
+<section class="relative mx-auto max-w-container-max rounded-pipely overflow-hidden h-[720px] bg-ink group">
+<!-- Background Image with data-alt -->
+<div class="absolute inset-0">
+<img alt="Michael Gremillion" class="w-full h-full object-cover transition-transform duration-[20s] group-hover:scale-105" data-alt="A portrait of a distinguished man in his 50s with a warm, intellectual expression, standing in a golden-hour pastoral setting. He is surrounded by soft, rolling green hills and ancient oak trees. The lighting is ethereal and sun-drenched, creating a faithful and grounded mood. The visual style is high-end editorial photography with rich textures, earthy tones of olive and gold, and a serene, stable atmosphere that feels timeless." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0KhHy_cKBxwqwq2hiy9iyYhbBuESUJk2YhTf2A6kTWAMOC3QIhVA4uYdX73_mci8RXr9ID2mS9LB3zs4K6REw3lFR6dw0flrZezf2fGGf_WxbCZ4HHQ9zXJwdbGPGwVTKV8OLcW0XHJisHmzIZPKc1tdV_BtvGRaymrxbF0JUKygCI6HFE-Dvb-nxwc0TpPvHkJGd9rAPLHfjTJqM2mj70rUwqeInE7lTNQf1Q1baHqqmbgzCVGL5pt3YZv6j-Cnk_NZme0-h3l8"/>
+<div class="absolute inset-0 hero-vignette"></div>
+</div>
+<!-- Hero Content Canvas -->
+<div class="relative z-10 h-full flex flex-col justify-center px-8 md:px-20 max-w-[800px]">
+<!-- Typography Content -->
+<h1 class="font-hero-headline text-hero-headline-mobile md:text-hero-headline text-white mb-8">
+                    Faithful insights.<br/>Grounded theology.
+                </h1>
+<p class="font-body-lg text-body-lg text-warm-white/90 mb-10 max-w-lg">
+                    Navigating modern complexity with ancient wisdom. A repository of sermons, deep-dive resources, and theological exploration for the curious soul.
+                </p>
+<!-- Primary CTAs -->
+<div class="flex flex-col sm:flex-row gap-4 mb-16">
+<button class="bg-burnished-gold text-white px-8 py-4 rounded-[4px] font-h4-label text-h4-label hover:brightness-110 transition-all flex items-center justify-center gap-2">
+                        VIEW BOOKS
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="border border-white/40 text-white px-8 py-4 rounded-[4px] font-h4-label text-h4-label hover:bg-white/10 transition-all">
+                        ABOUT MICHAEL
+                    </button>
+</div>
+<!-- Social Proof Cluster -->
+<div class="flex items-center gap-4 animate-fade-in">
+<div class="flex -space-x-3">
+<img class="w-10 h-10 rounded-full border-2 border-ink object-cover" data-alt="A close-up headshot of a young professional woman with a bright, welcoming smile. She is in a softly blurred outdoor library setting. The image is warm and grounded, fitting a high-end academic design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyfoX6sbO5gF_PKtyY0zEVdVFFXRmpdUXKSavbuNdaG1ThWOH7q0XvEhwuqnxwuiaDqVwe63GhoFN-lciavvieceZgft--vaeQ4WS4yPvId47iUSC0iuSZ_lDi6DYAeDXhxRTGgCrYR_3hSPw6L0V7V5MaQhEaoFLDLPjMtdqNRGWT9ymqeHqCmPAs7qDD_s3hzW74QatrMslvoL5tIULrccAkJEeT0VXLR-Gdknyrpq6jMRL7CoXirp_-Stj-9ANWreEzZyzBluI"/>
+<img class="w-10 h-10 rounded-full border-2 border-ink object-cover" data-alt="A portrait of an older gentleman with graying hair and glasses, looking thoughtfully at the camera. Soft natural lighting emphasizes a scholarly and faithful mood. The colors are natural and warm to match the minimalist study aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxy9cXWEFTBma75A4iNjDN9nmdkCgPIBM_DTL93G9iB5NtWi7-ATmpBUoTG-kFe5XEjvGrn8HH5JGbbpkDu1o6gSul5PWxZwG33VODEi5Vq95x0eFpUOjahCspI8q7TyfiptcPhTPxUoOdYq4CBAy7oU8QFM5oP2rdHptzDg6ThtT4qPsWy_1L9rSLZjKzd-k08SEAA1lYnCqCarzJV_tGYFxSwVkBYJIF7-ZSbZWLTufgoXVpO75IyM3fy8mZ5VtQHmHAJQ6eSSw"/>
+<img class="w-10 h-10 rounded-full border-2 border-ink object-cover" data-alt="A portrait of a smiling man in professional attire against a warm neutral background. The lighting is soft and even, highlighting a sense of community and intellect. The aesthetic is clean, minimalist, and deeply professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfRC4h0EoFLDr6bWvoSsV17Ed-d6VMEgMzQCN8HhhlHUPCvniSAiiWbktiyPCcY4MEeio6tX3Wyw99mHX8Yhj8q0c6QA8HaE9UVYroIhv_TpLCVZ6tpFcPzti0wx-GEBVHGZMxOKH5BjhJPxynXQiRm7ygIcyyv_zWBsXkggROrwhjLwmSzj3inVM_c29PkO0Me9dvTDBu-Cwiv2CYSq-_l50xBkI92qOZlSVy7vAjxkg_dOs4sTz26etTBIfgdvKzFO0xbAmzi14"/>
+<div class="w-10 h-10 rounded-full border-2 border-ink bg-burnished-gold flex items-center justify-center text-[10px] font-bold text-white font-h4-label">
+                            10K+
+                        </div>
+</div>
+<span class="text-warm-white/80 font-caption text-caption">10,000+ readers joined the study</span>
+</div>
+</div>
+</section>
+<!-- Newsletter / Secondary Callout Grid (Bento Style) -->
+<section class="mt-section-gap-mobile md:mt-section-gap-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter mx-auto max-w-container-max">
+<!-- Newsletter Card 1: In the Midst -->
+<div class="bg-parchment rounded-lg p-card-padding border border-warm-taupe/30 hover:border-warm-taupe transition-colors duration-300">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-weight="fill">mail</span>
+<h3 class="font-h3-sub text-h3-sub text-primary">In the Midst</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                    Weekly reflections on finding sacred rhythms in the ordinary noise of life. Direct to your inbox every Sunday morning.
+                </p>
+<form class="flex gap-2">
+<input class="flex-grow bg-white border-warm-taupe rounded-[4px] px-4 py-2 font-body-md focus:ring-primary focus:border-primary" placeholder="Email address" type="email"/>
+<button class="bg-primary text-cream px-6 py-2 rounded-[4px] font-h4-label text-h4-label text-white hover:opacity-90 transition-opacity">JOIN</button>
+</form>
+</div>
+<!-- Newsletter Card 2: Mockingbird Watch -->
+<div class="bg-surface-container-high rounded-lg p-card-padding border border-warm-taupe/30 hover:border-warm-taupe transition-colors duration-300">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-weight="fill">article</span>
+<h3 class="font-h3-sub text-h3-sub text-primary">Mockingbird Watch</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                    Monthly curated resources, book reviews, and deep-theology deep dives. For those who want to dig deeper into the roots of faith.
+                </p>
+<form class="flex gap-2">
+<input class="flex-grow bg-white border-warm-taupe rounded-[4px] px-4 py-2 font-body-md focus:ring-primary focus:border-primary" placeholder="Email address" type="email"/>
+<button class="bg-primary text-cream px-6 py-2 rounded-[4px] font-h4-label text-h4-label text-white hover:opacity-90 transition-opacity">JOIN</button>
+</form>
+</div>
+</section>
+<!-- Pull Quote Section -->
+<section class="my-section-gap-desktop py-20 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-burnished-gold text-5xl mb-6 opacity-30">format_quote</span>
+<blockquote class="max-w-[700px] font-quote text-quote text-on-surface italic leading-relaxed">
+                "Theology is not merely the study of God, but the act of letting God study us. It requires a quiet heart and a grounded mind to truly hear what is being spoken in the silence."
+            </blockquote>
+<cite class="mt-8 not-italic font-h4-label text-h4-label uppercase tracking-widest text-warm-gray">
+                — Michael Gremillion
+            </cite>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container border-t border-warm-taupe/20">
+<div class="max-w-container-max mx-auto px-margin-desktop py-section-gap-mobile grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<span class="font-h3-sub text-h3-sub text-primary block mb-4">Michael Gremillion</span>
+<p class="font-caption text-caption text-on-surface-variant">Faithful insights for the modern pilgrim. Grounded in tradition, open to the light.</p>
+</div>
+<div>
+<h4 class="font-h4-label text-h4-label text-primary mb-6">Navigation</h4>
+<ul class="space-y-3 font-nav-link text-nav-link text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Books</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sermons</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Resources</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-h4-label text-h4-label text-primary mb-6">Legal</h4>
+<ul class="space-y-3 font-nav-link text-nav-link text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-h4-label text-h4-label text-primary mb-6">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-warm-taupe flex items-center justify-center text-on-surface-variant hover:border-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-warm-taupe flex items-center justify-center text-on-surface-variant hover:border-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-warm-taupe/10 py-8 px-margin-desktop text-center">
+<p class="font-caption text-caption text-warm-gray">© 2024 Michael Gremillion. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for the floating nav on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('border', 'border-warm-taupe/20');
+            } else {
+                nav.classList.remove('border', 'border-warm-taupe/20');
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Inter:wght@100..900&amp;family=Source+Serif+4:ital,wght@0,200..900;1,200..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#fdf9f3",
+                    "primary-fixed": "#d9e9b7",
+                    "secondary-container": "#d8eaad",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#5b4104",
+                    "secondary": "#556434",
+                    "error-container": "#ffdad6",
+                    "on-surface": "#1c1c18",
+                    "on-primary-fixed": "#141f01",
+                    "outline-variant": "#c6c8ba",
+                    "background": "#fdf9f3",
+                    "surface-container-highest": "#e6e2dc",
+                    "primary": "#273311",
+                    "surface-variant": "#e6e2dc",
+                    "inverse-primary": "#bdcd9c",
+                    "on-secondary-fixed": "#151f00",
+                    "tertiary-fixed": "#ffdea7",
+                    "on-primary-container": "#aab98a",
+                    "parchment": "#EDE8DF",
+                    "surface-container-low": "#f7f3ed",
+                    "warm-taupe": "#D5CFC6",
+                    "secondary-fixed": "#d8eaad",
+                    "on-tertiary-fixed-variant": "#5d4206",
+                    "ink": "#1E1B17",
+                    "on-background": "#1c1c18",
+                    "on-tertiary-container": "#d4ae69",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#45483e",
+                    "tertiary-fixed-dim": "#e8c17a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#271900",
+                    "tertiary": "#402c00",
+                    "on-secondary-fixed-variant": "#3e4c1e",
+                    "on-secondary-container": "#5b6a39",
+                    "warm-gray": "#6B6560",
+                    "surface": "#fdf9f3",
+                    "inverse-surface": "#31302d",
+                    "secondary-fixed-dim": "#bccd93",
+                    "on-primary": "#ffffff",
+                    "outline": "#76786d",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#f4f0ea",
+                    "surface-tint": "#55633c",
+                    "surface-dim": "#ddd9d4",
+                    "muted-rust": "#8B3E2F",
+                    "primary-container": "#3d4a25",
+                    "warm-white": "#FDFAF6",
+                    "surface-container-high": "#ebe8e2",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#bdcd9c",
+                    "surface-container": "#f1ede7",
+                    "on-primary-fixed-variant": "#3e4b26"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap-mobile": "64px",
+                    "section-gap-desktop": "120px",
+                    "card-padding": "24px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "h3-sub": ["Lora"],
+                    "h2-section": ["Lora"],
+                    "quote": ["Lora"],
+                    "h4-label": ["Inter"],
+                    "caption": ["Inter"],
+                    "body-md": ["Source Serif 4"],
+                    "hero-headline-mobile": ["Lora"],
+                    "nav-link": ["Inter"],
+                    "hero-headline": ["Lora"],
+                    "body-lg": ["Source Serif 4"]
+            },
+            "fontSize": {
+                    "h3-sub": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "h2-section": ["36px", {"lineHeight": "1.25", "fontWeight": "500"}],
+                    "quote": ["22px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h4-label": ["16px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "caption": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-md": ["17px", {"lineHeight": "1.75", "fontWeight": "400"}],
+                    "hero-headline-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "nav-link": ["14px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                    "hero-headline": ["64px", {"lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.75", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom Muted Sage Background */
+        .bg-muted-sage { background-color: #D9DAC9; }
+        
+        /* Input focus effects */
+        .custom-input:focus {
+            outline: none;
+            border-color: #273311;
+        }
+        
+        /* Transition for the button */
+        .subscribe-pill {
+            transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-inverse-surface border-b border-warm-taupe/30 docked full-width top-0 z-50 sticky">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-h3-sub text-h3-sub text-primary dark:text-primary-fixed-dim" href="#">Michael Gremillion</a>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Books</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Sermons</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">About</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Resources</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-nav-link text-nav-link hover:bg-primary-container transition-all">Subscribe</button>
+</div>
+</header>
+<main>
+<!-- Newsletter Signup Section -->
+<section class="bg-muted-sage min-h-[921px] flex flex-col items-center justify-center px-margin-mobile md:px-margin-desktop">
+<!-- Decorative Dot -->
+<div class="w-1.5 h-1.5 bg-ink rounded-full mb-12 opacity-80"></div>
+<div class="max-w-3xl w-full text-center space-y-16">
+<!-- Headline -->
+<h1 class="font-hero-headline text-hero-headline-mobile md:text-hero-headline text-ink font-normal leading-tight tracking-tight">
+                    Sign up for insight, interviews and news from the quiet path.
+                </h1>
+<!-- Form -->
+<form class="flex flex-col md:flex-row items-baseline justify-center gap-12 w-full pt-8">
+<div class="w-full md:w-64 group">
+<label class="block font-h4-label text-h4-label text-ink/60 mb-2 text-left" for="name">First Name</label>
+<input class="custom-input w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 py-2 font-body-md text-body-md text-ink placeholder:text-ink/30 focus:border-ink transition-colors" id="name" name="name" placeholder="Your Name" type="text"/>
+</div>
+<div class="w-full md:w-64 group">
+<label class="block font-h4-label text-h4-label text-ink/60 mb-2 text-left" for="email">Email Address</label>
+<input class="custom-input w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 py-2 font-body-md text-body-md text-ink placeholder:text-ink/30 focus:border-ink transition-colors" id="email" name="email" placeholder="hello@example.com" required="" type="email"/>
+</div>
+<div class="w-full md:w-auto pt-4 md:pt-0">
+<button class="subscribe-pill w-full md:w-auto px-10 py-3 border border-primary text-primary font-h4-label text-h4-label rounded-full tracking-widest hover:bg-primary hover:text-white uppercase transition-all duration-300" type="submit">
+                            SUBSCRIBE
+                        </button>
+</div>
+</form>
+</div>
+<!-- Footer-like atmospheric text -->
+<p class="mt-24 font-caption text-caption text-ink/40 tracking-widest uppercase">Privacy is sacred here.</p>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-inverse-surface bg-parchment dark:bg-surface-container-highest">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="font-h3-sub text-h3-sub text-primary dark:text-primary-fixed-dim block mb-4">Michael Gremillion</span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant">A faithful, grounded approach to spiritual depth and intellectual clarity.</p>
+</div>
+<div class="col-span-1">
+<span class="font-h4-label text-h4-label text-primary dark:text-primary-fixed-dim block mb-6 uppercase tracking-wider">Navigation</span>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:underline decoration-primary transition-all" href="#">Books</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:underline decoration-primary transition-all" href="#">Sermons</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:underline decoration-primary transition-all" href="#">About</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:underline decoration-primary transition-all" href="#">Resources</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<span class="font-h4-label text-h4-label text-primary dark:text-primary-fixed-dim block mb-6 uppercase tracking-wider">Legal</span>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:underline decoration-primary transition-all" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:underline decoration-primary transition-all" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:underline decoration-primary transition-all" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<span class="font-h4-label text-h4-label text-primary dark:text-primary-fixed-dim block mb-6 uppercase tracking-wider">Connect</span>
+<div class="flex space-x-4">
+<a class="w-10 h-10 rounded-full border border-warm-taupe flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-warm-taupe flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="mail">mail</span>
+</a>
+</div>
+<p class="mt-8 font-caption text-caption text-on-surface-variant opacity-60">© 2024 Michael Gremillion. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Simple form interaction
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const button = this.querySelector('button');
+            const originalText = button.innerText;
+            button.innerText = 'THANK YOU';
+            button.classList.add('bg-primary', 'text-white');
+            
+            setTimeout(() => {
+                button.innerText = originalText;
+                button.classList.remove('bg-primary', 'text-white');
+                this.reset();
+            }, 3000);
+        });
+    </script>
+</body></html>

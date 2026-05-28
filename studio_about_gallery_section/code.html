@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600&amp;family=Source+Serif+4:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .fluid-bold-text {
+            font-size: clamp(28px, 5vw, 52px);
+            line-height: 1.15;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fdf9f3",
+                        "primary-fixed": "#d9e9b7",
+                        "secondary-container": "#d8eaad",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#5b4104",
+                        "secondary": "#556434",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#1c1c18",
+                        "on-primary-fixed": "#141f01",
+                        "outline-variant": "#c6c8ba",
+                        "background": "#fdf9f3",
+                        "surface-container-highest": "#e6e2dc",
+                        "primary": "#273311",
+                        "surface-variant": "#e6e2dc",
+                        "inverse-primary": "#bdcd9c",
+                        "on-secondary-fixed": "#151f00",
+                        "tertiary-fixed": "#ffdea7",
+                        "on-primary-container": "#aab98a",
+                        "parchment": "#EDE8DF",
+                        "surface-container-low": "#f7f3ed",
+                        "warm-taupe": "#D5CFC6",
+                        "secondary-fixed": "#d8eaad",
+                        "on-tertiary-fixed-variant": "#5d4206",
+                        "ink": "#1E1B17",
+                        "on-background": "#1c1c18",
+                        "on-tertiary-container": "#d4ae69",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#45483e",
+                        "tertiary-fixed-dim": "#e8c17a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#271900",
+                        "tertiary": "#402c00",
+                        "on-secondary-fixed-variant": "#3e4c1e",
+                        "on-secondary-container": "#5b6a39",
+                        "warm-gray": "#6B6560",
+                        "surface": "#fdf9f3",
+                        "inverse-surface": "#31302d",
+                        "secondary-fixed-dim": "#bccd93",
+                        "on-primary": "#ffffff",
+                        "outline": "#76786d",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f4f0ea",
+                        "surface-tint": "#55633c",
+                        "surface-dim": "#ddd9d4",
+                        "muted-rust": "#8B3E2F",
+                        "primary-container": "#3d4a25",
+                        "warm-white": "#FDFAF6",
+                        "surface-container-high": "#ebe8e2",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#bdcd9c",
+                        "surface-container": "#f1ede7",
+                        "on-primary-fixed-variant": "#3e4b26"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap-mobile": "64px",
+                        "section-gap-desktop": "120px",
+                        "card-padding": "24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "h3-sub": ["Lora"],
+                        "h2-section": ["Lora"],
+                        "quote": ["Lora"],
+                        "h4-label": ["Inter"],
+                        "caption": ["Inter"],
+                        "body-md": ["Source Serif 4"],
+                        "hero-headline-mobile": ["Lora"],
+                        "nav-link": ["Inter"],
+                        "hero-headline": ["Lora"],
+                        "body-lg": ["Source Serif 4"]
+                    },
+                    "fontSize": {
+                        "h3-sub": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "h2-section": ["36px", {"lineHeight": "1.25", "fontWeight": "500"}],
+                        "quote": ["22px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h4-label": ["16px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "caption": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "body-md": ["17px", {"lineHeight": "1.75", "fontWeight": "400"}],
+                        "hero-headline-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "nav-link": ["14px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                        "hero-headline": ["64px", {"lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.75", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-warm-white text-on-surface selection:bg-primary-fixed">
+<!-- Top Navigation Bar (Shared Component) -->
+<nav class="bg-surface docked full-width top-0 border-b border-warm-taupe/30 z-50 sticky">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<span class="font-h3-sub text-h3-sub text-primary">Michael Gremillion</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Books</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Sermons</a>
+<a class="font-nav-link text-nav-link text-primary border-b-2 border-primary" href="#">About</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Resources</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-[4px] font-nav-link text-nav-link hover:bg-primary-container transition-all">Subscribe</button>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden p-2 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="min-h-screen overflow-hidden">
+<!-- About Section -->
+<section class="py-section-gap-desktop px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-[130px_1fr] gap-gutter items-start">
+<!-- Label Column -->
+<div class="pt-4">
+<span class="font-h4-label text-h4-label text-primary uppercase tracking-widest border-b border-warm-taupe pb-2 block w-fit lg:w-full">
+                        The Studio
+                    </span>
+</div>
+<!-- Text Column -->
+<div class="relative">
+<p class="font-hero-headline fluid-bold-text text-ink italic lg:not-italic font-bold">
+                        A dedicated space for the deep work of theology, writing, and spiritual formation. This hub exists to bridge the gap between ancient wisdom and contemporary living through rigorous study and heartfelt ministry. 
+                        <a class="inline-flex items-center gap-2 bg-ink text-white px-6 py-3 rounded-full font-h4-label text-caption ml-4 align-middle hover:bg-primary transition-all duration-300" href="#">
+                            About Michael
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</p>
+</div>
+</div>
+</section>
+<!-- Horizontal Gallery (Bleed Right) -->
+<section class="pb-section-gap-desktop pl-margin-desktop overflow-hidden">
+<div class="flex overflow-x-auto gap-gutter hide-scrollbar snap-x snap-mandatory pb-8">
+<!-- Image 1 -->
+<div class="flex-shrink-0 snap-start">
+<img alt="Candid Ministry Moment 1" class="h-[420px] w-[320px] object-cover rounded-[10px] shadow-sm hover:grayscale-[0.5] transition-all duration-500" data-alt="A candid, warm-lit photograph of Michael Gremillion in a sun-drenched study, surrounded by floor-to-ceiling wooden bookshelves filled with leather-bound volumes. He is thoughtfully making notes in a journal. The aesthetic is grounded and intellectual, with a soft parchment and deep olive palette reflecting a faithful and warm atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjwCTu5u6ktyqDxSE15B440PUMVh34K2eWxM_9z3mYChN82kjIt0vo3eTSfXaiOWiqttcDityTzDJ1IXD115vZw_e60d_3uxDiI6uJ97wkS2l5nVCCSaUCvSSB1v_vdmYDahLqsf5jBzqcQdzGbBItfqgDxEq0mG3B72tZH4IsxNKUqwo81Dq1V2KgDnzMmLMBawTeP3bw9unv4QIIF9rnecoXPEKQKkzoybDKPuOAXgxDmcKHvNI_ngkBq0Y72ANaHfYNHG4GTz8"/>
+</div>
+<!-- Image 2 -->
+<div class="flex-shrink-0 snap-start">
+<img alt="Landscape 1" class="h-[420px] w-[580px] object-cover rounded-[10px] shadow-sm hover:grayscale-[0.5] transition-all duration-500" data-alt="A wide-angle landscape shot of a serene, mist-covered mountain range at dawn, capturing the spiritual depth and tranquility of nature. The lighting is low-key and ethereal, emphasizing the stability and permanence of the landscape. The color tones are natural and earthy, dominated by muted greens and soft grays to match a minimalist visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7KRdfV3H83_XCd9HN1Ju-ChAv40HpWHSKYugJV-ozSh5pFfL80mtYZdnfSBypCHBYJd1n460rdWkcDmPSQUdV61Z-4pRU_Falsjd5mw_rhiGSS-iBIqNjZy-sM2F2zrraz_IH0Ugwp6rMg61L_6jqbucf-pCO8lVhQtD-UM3kztr1xWmygvh1XYBkT30gFtp8GxhNscAi1c_VIzx5xDWhkBEkWkONf02Ub0fOo1RVWT5C3BYKxmbyFUm07aHlhm-OX6K4gmIMnJ0"/>
+</div>
+<!-- Image 3 -->
+<div class="flex-shrink-0 snap-start">
+<img alt="Candid Ministry Moment 2" class="h-[420px] w-[400px] object-cover rounded-[10px] shadow-sm hover:grayscale-[0.5] transition-all duration-500" data-alt="A close-up shot of an open vintage Bible on a rustic wooden desk, with a pair of reading glasses resting on the page. The texture of the old paper and the scent of leather are visually evoked through high-end editorial lighting. The atmosphere is quiet and reverent, utilizing a sophisticated warm white and warm taupe color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4pi_RPKdvWnSHoZ4K9UKeBDrZm6TcMm-cHS3pZKWZFbTfelytkxkdgz4AI8i671RGvbXU-UfdzkYMxzB1DxCzsG19Y5UG0hUIppBofZs0f-D4zz7s6WA7nU964iL7naoQimvA1GBy7K4Cl2_nzYMxFpTKMxIZ4MqVLdVSUmn0tBOFJwtKsv74pr_kLMvtwhCRg1-fvUJONx6yC0xKwJV__eoIJnzaASnAEyeWwFZ-opr1aRze3TiLfPd5yFDzr5W_F3KMLIwkPjk"/>
+</div>
+<!-- Image 4 -->
+<div class="flex-shrink-0 snap-start pr-margin-desktop">
+<img alt="Candid Ministry Moment 3" class="h-[420px] w-[500px] object-cover rounded-[10px] shadow-sm hover:grayscale-[0.5] transition-all duration-500" data-alt="A soft-focus photograph of a group of people gathered in a cozy, sunlit living room for a small group discussion. The mood is warm, welcoming, and intimate, highlighting communal spiritual formation. The lighting is high-key and natural, creating a sense of accessibility and faithful engagement within a modern, minimalist setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAxpwTMw_4Is7-Ag9GLMyI5h1FieRMPW9N6OFFNSs7sexgE_1kPu0rGmTO8MtltXs2iruIBr5cjVBOO6x6A0dmKr06fZmb8-v3KCnSxVFPViHcVriy0wG5Vk4CmM-vMSypSBOsARy-xhQtvjnO7Fh2V5zsD4eHXYHtpJF4g282Lj2V3zYgtk-GZ8x6UYZyRrpoGg6aJyDzpOgNRS1sGVCLJLEAGAssJY_frye27VybCRG22zB9fJHaiMuk0O_hMcGYml04J1YvGcU"/>
+</div>
+</div>
+<!-- Scroll Indicator for better UX -->
+<div class="flex items-center gap-4 mt-4">
+<div class="h-[1px] bg-warm-taupe flex-grow max-w-[200px]"></div>
+<span class="font-h4-label text-caption text-warm-gray uppercase tracking-widest">Scroll to explore</span>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container full-width">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap-desktop max-w-container-max mx-auto">
+<div class="space-y-6">
+<span class="font-h3-sub text-h3-sub text-primary">Michael Gremillion</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Exploring the intersection of theology, culture, and the Christian life.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-h4-label text-h4-label text-primary">Explore</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-primary" href="#">Books</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-primary" href="#">Sermons</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-primary" href="#">About</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-h4-label text-h4-label text-primary">Legal</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-primary" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:underline decoration-primary" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-h4-label text-h4-label text-primary">Newsletter</h4>
+<div class="flex flex-col gap-2">
+<input class="bg-parchment border-warm-taupe rounded-[4px] px-4 py-2 focus:ring-1 focus:ring-primary focus:border-primary outline-none text-body-md" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-[4px] font-nav-link hover:opacity-90 transition-all">Sign Up</button>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-warm-taupe/20 max-w-container-max mx-auto text-center">
+<p class="font-body-md text-caption text-warm-gray">© 2024 Michael Gremillion. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Micro-interaction: Smooth scroll for the horizontal gallery
+        const gallery = document.querySelector('.hide-scrollbar');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        gallery.addEventListener('mousedown', (e) => {
+            isDown = true;
+            gallery.classList.add('active');
+            startX = e.pageX - gallery.offsetLeft;
+            scrollLeft = gallery.scrollLeft;
+        });
+        gallery.addEventListener('mouseleave', () => {
+            isDown = false;
+        });
+        gallery.addEventListener('mouseup', () => {
+            isDown = false;
+        });
+        gallery.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - gallery.offsetLeft;
+            const walk = (x - startX) * 2; 
+            gallery.scrollLeft = scrollLeft - walk;
+        });
+
+        // Sticky Nav Shadow Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body></html>

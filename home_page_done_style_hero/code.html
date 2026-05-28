@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#ebe8e2",
+                        "secondary": "#556434",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#45483e",
+                        "on-primary-fixed-variant": "#3e4b26",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#5b4104",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#55633c",
+                        "on-tertiary-fixed": "#271900",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1c1c18",
+                        "surface-container-highest": "#e6e2dc",
+                        "ink": "#1E1B17",
+                        "primary-fixed-dim": "#bdcd9c",
+                        "primary": "#273311",
+                        "surface-variant": "#e6e2dc",
+                        "parchment": "#EDE8DF",
+                        "surface-dim": "#ddd9d4",
+                        "outline": "#76786d",
+                        "on-tertiary-container": "#d4ae69",
+                        "surface-container": "#f1ede7",
+                        "on-primary-fixed": "#141f01",
+                        "primary-fixed": "#d9e9b7",
+                        "warm-white": "#FDFAF6",
+                        "outline-variant": "#c6c8ba",
+                        "tertiary": "#402c00",
+                        "secondary-fixed-dim": "#bccd93",
+                        "on-secondary-fixed-variant": "#3e4c1e",
+                        "tertiary-fixed": "#ffdea7",
+                        "secondary-fixed": "#d8eaad",
+                        "inverse-surface": "#31302d",
+                        "on-surface": "#1c1c18",
+                        "secondary-container": "#d8eaad",
+                        "tertiary-fixed-dim": "#e8c17a",
+                        "surface": "#fdf9f3",
+                        "surface-container-low": "#f7f3ed",
+                        "warm-gray": "#6B6560",
+                        "muted-rust": "#8B3E2F",
+                        "inverse-on-surface": "#f4f0ea",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#5b6a39",
+                        "inverse-primary": "#bdcd9c",
+                        "on-tertiary-fixed-variant": "#5d4206",
+                        "background": "#fdf9f3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fdf9f3",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#151f00",
+                        "primary-container": "#3d4a25",
+                        "warm-taupe": "#D5CFC6",
+                        "on-primary-container": "#aab98a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "card-padding": "24px",
+                        "margin-mobile": "20px",
+                        "section-gap-mobile": "64px",
+                        "section-gap-desktop": "120px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "quote": ["Lora"],
+                        "hero-headline": ["Lora"],
+                        "hero-headline-mobile": ["Lora"],
+                        "body-md": ["Source Serif 4"],
+                        "h2-section": ["Lora"],
+                        "h3-sub": ["Lora"],
+                        "body-lg": ["Source Serif 4"],
+                        "h4-label": ["Inter"],
+                        "nav-link": ["Inter"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "quote": ["22px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "hero-headline": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "hero-headline-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-md": ["17px", {"lineHeight": "1.75", "fontWeight": "400"}],
+                        "h2-section": ["36px", {"lineHeight": "1.25", "fontWeight": "500"}],
+                        "h3-sub": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.75", "fontWeight": "400"}],
+                        "h4-label": ["16px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "nav-link": ["14px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                        "caption": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spin-slow 12s linear infinite;
+        }
+        .text-ring {
+            font-family: 'Inter', sans-serif;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Announcement Bar -->
+<div class="bg-ink text-warm-white py-3 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto flex items-center justify-between">
+<p class="font-nav-link text-nav-link">New Series: The Chronicles of Sovereignty →</p>
+<button class="bg-secondary text-warm-white px-4 py-1.5 rounded-full font-h4-label text-[12px] uppercase tracking-wider hover:bg-opacity-90 transition-all">
+                ORDER NOW
+            </button>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col bg-primary-container overflow-hidden">
+<!-- Navigation Shell -->
+<nav class="relative z-50 px-margin-mobile md:px-margin-desktop py-6">
+<div class="max-w-container-max mx-auto grid grid-cols-3 items-center">
+<!-- Social Icons (Left) -->
+<div class="flex gap-4 text-warm-white/80">
+<a class="hover:text-warm-white transition-colors" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+<a class="hover:text-warm-white transition-colors" href="#"><span class="material-symbols-outlined" data-icon="public">public</span></a>
+</div>
+<!-- Logo (Center) -->
+<div class="flex justify-center">
+<div class="bg-warm-white text-primary px-6 py-2 rounded-full shadow-sm">
+<span class="font-h3-sub text-h3-sub font-bold tracking-tight">Michael Gremillion</span>
+</div>
+</div>
+<!-- Nav Links (Right) -->
+<div class="flex justify-end gap-8 text-warm-white font-nav-link text-nav-link uppercase tracking-widest">
+<a class="hover:text-primary-fixed-dim transition-colors" href="#">Books</a>
+<a class="hover:text-primary-fixed-dim transition-colors" href="#">Sermons</a>
+</div>
+</div>
+</nav>
+<!-- Main Hero Content -->
+<div class="flex-grow flex items-center px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<!-- Left Column (Content) -->
+<div class="max-w-xl">
+<h1 class="font-hero-headline text-hero-headline text-surface leading-[1.1] mb-6">
+                        Finding stillness in a noisy world
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-primary-container opacity-90 max-w-sm">
+                        Your journey to spiritual depth starts here. Discover resources designed for modern faith.
+                    </p>
+</div>
+<!-- Right Column (Product) -->
+<div class="relative h-[600px] md:h-[700px] flex items-end justify-center perspective-1000">
+<!-- Book Staggered Layout -->
+<div class="relative w-full h-full flex justify-center">
+<!-- Book 3 (Back Right) -->
+<div class="absolute bottom-0 translate-x-24 -rotate-12 transform hover:-translate-y-4 transition-transform duration-500">
+<img alt="" class="w-[240px] h-auto shadow-2xl rounded-sm" data-alt="A premium hardcover book titled Men of the King placed against a deep olive background. The cover features minimalist gold foil typography and a subtle tactile texture. The lighting is soft and directional, highlighting the high-quality paper and binding. The overall aesthetic is grounded, faithful, and scholarly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDebmnhAwfrMqxI7HxZyPWSjaIG4ijrt5MKPJOdD4zdgocfjY3IRt5cDk6n4wehSgJuucfh_T_PlUgerh3SZ1t4cmITq7L9UoIc0p3CWgRNxB83sxf-IqXf0gnK9Q1Bh0FxUiyGNztDZgTyZjVqG2FQ9qWt13Kk3UOhNoI0bGPtQsbIwrdvGlH3FSq2hfV8aFUSojNPrpKquPpC4rYSARTjNpCQftoD_JEW4owBcBq9y_Mzzj52vH8d2HKEaPY3oGJ4CMBP17oX5YM"/>
+</div>
+<!-- Book 2 (Back Left) -->
+<div class="absolute bottom-0 -translate-x-24 rotate-12 transform hover:-translate-y-4 transition-transform duration-500 delay-75">
+<img alt="" class="w-[240px] h-auto shadow-2xl rounded-sm" data-alt="A sophisticated book cover for a spiritual series called Men of the King. The design uses natural, earthy tones like warm taupe and deep greens. The cover art is minimalist with a focus on traditional serif typography. It is shown at a slight angle to emphasize its physical presence and tactile paper quality in a bright, sunlit study setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-Y71Khh5jfmEYz11Ei3jRpChBdpm3YqwlkEcRtWYyQUJB_W6ogwGRZjbgjW-TEIu1MkeZpmzHyuFtgmY8OY1mdqW2s-8JXcx7gB1VIZNwHEohB9rLX66fvQ9TbJn4iGCKsem1K612uCtC2yctivSM6cfNEtwVRURMwtssAsw5lNy25DgNXQBfHsq7gk0G_npairf3xibOMl78SNlaehImX3UCMWqCNnwQkgGHpQXl2LfEC8bzJ7GVZ4MnUEDVpL-5WpcfgjUsDqw"/>
+</div>
+<!-- Book 1 (Center Front) -->
+<div class="absolute bottom-0 z-10 transform hover:-translate-y-6 transition-transform duration-500 delay-150">
+<img alt="" class="w-[280px] h-auto shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] rounded-sm" data-alt="The primary book cover in the Men of the King series, displayed prominently. It features a rich, leather-like texture with embossed gold lettering and a classic faithful emblem. The background is a solid deep olive, creating a high-contrast and authoritative visual. The image captures the essence of a permanent, timeless piece of literature." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxoyjZAtVYs6BDQBTo5JjW5eh-gv2lH-gTlpXZVDfqO_F3Vcvx7tUQQDItmfTHc24w8MVOnIba3dxmpBCyXjJyfl8eDIeXkzux1QnlTR5pEZH6fVX2KIFPWxf-JITBf8CW3Vo4YQNOqMY_OvAZQKkY__J6oODjBeLqXE2P8BTEDdmyXeZoUzNdP-E62T0EJGpWMWRjtDrHilykDnRTUmMlmvv5VCBvBY8eZPgmShWXftLB-XWV3XyCUBp4f26og8SPK0YJLoavuUA"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Video CTA (Bottom-Left) -->
+<div class="absolute bottom-12 left-margin-desktop z-20 hidden md:block">
+<div class="relative w-32 h-32 flex items-center justify-center">
+<!-- Rotating Text Ring -->
+<svg class="absolute inset-0 w-full h-full animate-spin-slow" viewbox="0 0 100 100">
+<defs>
+<path d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" id="circlePath"></path>
+</defs>
+<text class="text-ring fill-warm-white">
+<textpath xlink:href="#circlePath">
+                            · WATCH SERMON · WATCH SERMON · WATCH SERMON ·
+                        </textpath>
+</text>
+</svg>
+<!-- Play Icon Center -->
+<div class="w-12 h-12 bg-warm-white rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform shadow-lg group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-black/10 to-transparent pointer-events-none"></div>
+</section>
+<!-- Footer for Integrity (Minimal version based on JSON shell logic) -->
+<footer class="bg-surface-container py-12 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto text-center">
+<p class="font-caption text-caption text-on-surface-variant">© 2024 Michael Gremillion. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for the floating books
+        document.addEventListener('mousemove', (e) => {
+            const books = document.querySelectorAll('.perspective-1000 img');
+            const x = (window.innerWidth / 2 - e.pageX) / 50;
+            const y = (window.innerHeight / 2 - e.pageY) / 50;
+            
+            books.forEach((book, index) => {
+                const factor = (index + 1) * 0.5;
+                book.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+            });
+        });
+    </script>
+</body></html>

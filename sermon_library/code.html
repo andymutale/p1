@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sermons &amp; Teachings | Michael Gremillion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "ink": "#1E1B17",
+                        "surface-container-highest": "#e6e2dc",
+                        "surface-container-low": "#f7f3ed",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#45483e",
+                        "outline-variant": "#c6c8ba",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#141f01",
+                        "on-background": "#1c1c18",
+                        "muted-rust": "#8B3E2F",
+                        "surface-variant": "#e6e2dc",
+                        "secondary-fixed-dim": "#bccd93",
+                        "surface-dim": "#ddd9d4",
+                        "on-secondary-fixed-variant": "#3e4c1e",
+                        "parchment": "#EDE8DF",
+                        "tertiary-fixed": "#ffdea7",
+                        "on-secondary-container": "#5b6a39",
+                        "surface-container-high": "#ebe8e2",
+                        "surface-container": "#f1ede7",
+                        "inverse-primary": "#bdcd9c",
+                        "primary": "#273311",
+                        "on-tertiary-fixed": "#271900",
+                        "secondary-fixed": "#d8eaad",
+                        "on-surface": "#1c1c18",
+                        "on-tertiary-container": "#d4ae69",
+                        "surface-tint": "#55633c",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#bdcd9c",
+                        "tertiary": "#402c00",
+                        "on-secondary-fixed": "#151f00",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#d8eaad",
+                        "on-tertiary-fixed-variant": "#5d4206",
+                        "surface-bright": "#fdf9f3",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#e8c17a",
+                        "warm-white": "#FDFAF6",
+                        "warm-taupe": "#D5CFC6",
+                        "warm-gray": "#6B6560",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#3e4b26",
+                        "on-primary-container": "#aab98a",
+                        "on-error-container": "#93000a",
+                        "background": "#fdf9f3",
+                        "surface": "#fdf9f3",
+                        "tertiary-container": "#5b4104",
+                        "inverse-surface": "#31302d",
+                        "secondary": "#556434",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#3d4a25",
+                        "outline": "#76786d",
+                        "primary-fixed": "#d9e9b7",
+                        "inverse-on-surface": "#f4f0ea"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap-mobile": "64px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "section-gap-desktop": "120px",
+                        "margin-desktop": "64px",
+                        "card-padding": "24px"
+                    },
+                    "fontFamily": {
+                        "hero-headline": ["Lora"],
+                        "body-md": ["Source Serif 4"],
+                        "nav-link": ["Inter"],
+                        "h3-sub": ["Lora"],
+                        "h2-section": ["Lora"],
+                        "quote": ["Lora"],
+                        "h4-label": ["Inter"],
+                        "caption": ["Inter"],
+                        "body-lg": ["Source Serif 4"],
+                        "hero-headline-mobile": ["Lora"]
+                    },
+                    "fontSize": {
+                        "hero-headline": ["64px", {"lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-md": ["17px", {"lineHeight": "1.75", "fontWeight": "400"}],
+                        "nav-link": ["14px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                        "h3-sub": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "h2-section": ["36px", {"lineHeight": "1.25", "fontWeight": "500"}],
+                        "quote": ["22px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h4-label": ["16px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "caption": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.75", "fontWeight": "400"}],
+                        "hero-headline-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #fdf9f3; /* Matching surface/background token */
+            color: #1c1c18;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .sermon-card:hover .sermon-image {
+            transform: scale(1.02);
+        }
+        .sermon-image {
+            transition: transform 0.4s ease;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-inverse-surface border-b border-warm-taupe/30 fixed top-0 w-full z-50">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-h3-sub text-h3-sub text-primary dark:text-primary-fixed-dim">Michael Gremillion</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Books</a>
+<a class="font-nav-link text-nav-link text-primary dark:text-primary-fixed-dim border-b-2 border-primary hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Sermons</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">About</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Resources</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Contact</a>
+<button class="bg-primary text-warm-white px-6 py-2 rounded-[4px] font-nav-link text-nav-link hover:bg-opacity-90 transition-all">Subscribe</button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main class="pt-24 md:pt-32">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16 md:mb-24">
+<h1 class="font-hero-headline-mobile md:font-hero-headline text-hero-headline-mobile md:text-hero-headline text-primary mb-6">Sermons &amp; Teachings</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Exploring the timeless truths of Scripture with intellectual clarity and spiritual depth. Join us as we journey through the Word of God.
+            </p>
+</section>
+<!-- Filter Bar -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12">
+<div class="bg-parchment p-6 rounded-lg flex flex-col md:flex-row gap-6 items-center justify-between border border-warm-taupe/30">
+<div class="flex flex-wrap gap-4 w-full md:w-auto">
+<div class="flex flex-col gap-2 flex-1 md:flex-initial min-w-[160px]">
+<label class="font-h4-label text-h4-label text-ink">Series</label>
+<select class="bg-warm-white border-warm-taupe rounded-[4px] py-2 px-4 focus:ring-primary focus:border-primary w-full">
+<option>All Series</option>
+<option>Psalms</option>
+<option>Men of the King</option>
+<option>Standalone</option>
+<option>The Gospel of John</option>
+</select>
+</div>
+<div class="flex flex-col gap-2 flex-1 md:flex-initial min-w-[160px]">
+<label class="font-h4-label text-h4-label text-ink">Topic</label>
+<select class="bg-warm-white border-warm-taupe rounded-[4px] py-2 px-4 focus:ring-primary focus:border-primary w-full">
+<option>All Topics</option>
+<option>Grace</option>
+<option>Sovereignty</option>
+<option>Sanctification</option>
+<option>Biblical Manhood</option>
+</select>
+</div>
+</div>
+<div class="relative w-full md:w-80">
+<input class="w-full bg-warm-white border-warm-taupe rounded-[4px] py-2 pl-10 pr-4 focus:ring-primary focus:border-primary" placeholder="Search teachings..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant">search</span>
+</div>
+</div>
+</section>
+<!-- Sermon Grid -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Sermon Card 1 -->
+<article class="sermon-card group">
+<div class="overflow-hidden rounded-lg mb-4 aspect-video relative border border-warm-taupe/30">
+<img class="sermon-image w-full h-full object-cover" data-alt="A cinematic, low-angle shot of an ancient, open Bible resting on a dark wooden pulpit in a sun-drenched historic chapel. The lighting is warm and golden, filtering through high windows to create soft dust motes and deep shadows. The aesthetic is faithful and grounded, using a palette of deep olive greens and rich earth tones consistent with a pastoral legacy design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq9AiUIxj1lNu84Q3t0vEBX_hr6yQFjhktaCevNLzSsjiSNmNHAMtUrLcEmnf7mLorn7MHMzYqaxH31NwflJBRZ0z69BCRUMintYbbOiM_ahmNMUIXSwTFROQQ_zyTtZjXXGnEGvZv2s0uSn9EwGFeshuImmIxKhNpOp2_Yp_043CvxCrIcfAKFTxLLdL_pPG-2uELvbIbKvq7Rfi1ju2xGaJK3KTTM3oI02HCTeSoQJiP-MtaNV69Pmj7x36Gaeiy6Wy9EmiUhms"/>
+<div class="absolute bottom-3 right-3 flex gap-2">
+<span class="bg-primary/90 text-warm-white px-3 py-1 rounded-full text-caption font-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">videocam</span> Video
+                            </span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-3 text-caption font-caption text-on-surface-variant">
+<span>Oct 27, 2024</span>
+<span class="h-1 w-1 bg-warm-taupe rounded-full"></span>
+<span class="font-medium text-muted-rust">Psalm 23:1-6</span>
+</div>
+<h3 class="font-h3-sub text-h3-sub text-primary group-hover:text-muted-rust transition-colors">
+<a href="#">The Shepherd's Provision in the Valley</a>
+</h3>
+<p class="line-clamp-2 text-on-surface-variant">
+                            Understanding how the radical grace of the Good Shepherd sustains the believer even in the darkest seasons of spiritual drought.
+                        </p>
+</div>
+</article>
+<!-- Sermon Card 2 -->
+<article class="sermon-card group">
+<div class="overflow-hidden rounded-lg mb-4 aspect-video relative border border-warm-taupe/30">
+<img class="sermon-image w-full h-full object-cover" data-alt="A wide, atmospheric shot of an old library or study filled with rows of leather-bound books and a soft, sunlit glow. The scene is tranquil and scholarly, evoking the scent of old paper and leather. The lighting is soft and natural, emphasizing a minimalist yet tactile influence with a high-end editorial feel that perfectly matches the pastoral brand personality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXwMNrdSMexoZCOYlLUzo6hqZ3WrVsXLs-ZV8QbTfGV8A4G5S_-Nmj4Ex49cJUAQiZMfPbgiStC4jYAza76zi4qNdaskN_jB8uQG4dvSRUhOFqkLYCMTt3tE4bboM0s24_qIc9fPcEKEvgcualGK1Op-an5Jqqhws7qyB0_6CbKl3KUtUptR3WpCbKINW1HPmLk2tVZm7eVyMmCXCD493zAUCgyCeb28-ezsfpirajj7GqlIEXHMTH7MZ-PjVbID3SzGNsm3-4s0Q"/>
+<div class="absolute bottom-3 right-3 flex gap-2">
+<span class="bg-primary/90 text-warm-white px-3 py-1 rounded-full text-caption font-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">headphones</span> Audio
+                            </span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-3 text-caption font-caption text-on-surface-variant">
+<span>Oct 20, 2024</span>
+<span class="h-1 w-1 bg-warm-taupe rounded-full"></span>
+<span class="font-medium text-muted-rust">1 Samuel 16</span>
+</div>
+<h3 class="font-h3-sub text-h3-sub text-primary group-hover:text-muted-rust transition-colors">
+<a href="#">David: The Heart Behind the Crown</a>
+</h3>
+<p class="line-clamp-2 text-on-surface-variant">
+                            From the series Men of the King, we examine why God looks at the heart rather than outward appearances when seeking a leader.
+                        </p>
+</div>
+</article>
+<!-- Sermon Card 3 -->
+<article class="sermon-card group">
+<div class="overflow-hidden rounded-lg mb-4 aspect-video relative border border-warm-taupe/30">
+<img class="sermon-image w-full h-full object-cover" data-alt="A breathtaking landscape of a quiet meadow at dawn, with a gentle mist rising and a soft, golden sun just breaking the horizon. The composition is serene and stable, reflecting a faithful and warm spiritual atmosphere. The colors are natural and earthy, blending cream backgrounds with soft olive tones to create a sense of timeless permanence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXSDfjO0lhmxQYhyXOYPMFTV_ePve7vt2wkLHolsK7GAAn1uxjgsJjkypL7snJPOrDioIDzn776BAFwum24M97cpJpLTfY_mzxP7Bd61GmV_sZxqR-_5EcrCj-NKwn4BmOw9KghJ7KGiT9U6ElGyU14YJFCGzHYzJ-NoXT_zOebTqbeAHYtStoY6jdBHnUnv3YpRQqgPyJHnRgHIrdV_9knrY0sq96yKzT1a8eJGgYoU-LJNJKPkC6dgUwUJGcqGPa_-oMLmJ_XFA"/>
+<div class="absolute bottom-3 right-3 flex gap-2">
+<span class="bg-primary/90 text-warm-white px-3 py-1 rounded-full text-caption font-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">videocam</span> Video
+                            </span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-3 text-caption font-caption text-on-surface-variant">
+<span>Oct 13, 2024</span>
+<span class="h-1 w-1 bg-warm-taupe rounded-full"></span>
+<span class="font-medium text-muted-rust">John 15:1-11</span>
+</div>
+<h3 class="font-h3-sub text-h3-sub text-primary group-hover:text-muted-rust transition-colors">
+<a href="#">Abiding in the Vine of Grace</a>
+</h3>
+<p class="line-clamp-2 text-on-surface-variant">
+                            Discovering the secret to spiritual fruitfulness through a constant, vital union with the person and work of Jesus Christ.
+                        </p>
+</div>
+</article>
+<!-- Sermon Card 4 -->
+<article class="sermon-card group">
+<div class="overflow-hidden rounded-lg mb-4 aspect-video relative border border-warm-taupe/30">
+<img class="sermon-image w-full h-full object-cover" data-alt="A detail-rich image of a fountain pen laying across a handwritten manuscript on parchment paper. The setting is a quiet study, illuminated by warm, high-end light. The visual style is traditional yet clean, using sophisticated earthy tones and generous whitespace to create a trusted hub aesthetic for spiritual and intellectual depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXNv2oMNFwOns-KYsL2yzVzfFVeaVWvA27an_P8XuS1p5yX8KWiCEkZrDtU0RpiVaCzifP692Bm2J_XphlEt52nYmfpl7Myrdbkc2b6vkxcaZazudQ58waJgIHA7oD-VpLln4QMOX_u2tj397_3sZWakhPnM0ScNpSVkYGgQDYzeORNl7S1wISc1w4OaqbTLH1S-y_EGCX48uHoFZMAZlv6lHftQmN8bVjY2Ajtu9kwYISSstlpQctHnj8Fzlspn8rR6Pp46qNtuQ"/>
+<div class="absolute bottom-3 right-3 flex gap-2">
+<span class="bg-primary/90 text-warm-white px-3 py-1 rounded-full text-caption font-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">headphones</span> Audio
+                            </span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-3 text-caption font-caption text-on-surface-variant">
+<span>Oct 6, 2024</span>
+<span class="h-1 w-1 bg-warm-taupe rounded-full"></span>
+<span class="font-medium text-muted-rust">Ephesians 2:8-10</span>
+</div>
+<h3 class="font-h3-sub text-h3-sub text-primary group-hover:text-muted-rust transition-colors">
+<a href="#">By Grace Alone: The Reformation Core</a>
+</h3>
+<p class="line-clamp-2 text-on-surface-variant">
+                            A historical and biblical examination of Sola Gratia and its practical implications for our daily walk with God.
+                        </p>
+</div>
+</article>
+<!-- Sermon Card 5 -->
+<article class="sermon-card group">
+<div class="overflow-hidden rounded-lg mb-4 aspect-video relative border border-warm-taupe/30">
+<img class="sermon-image w-full h-full object-cover" data-alt="An expansive view of ancient olive trees in a grove, with sunlight dappling the silver-green leaves. The atmosphere is peaceful and enduring, suggesting wisdom and permanence. The color palette emphasizes natural deep olives and warm taupes, creating a stable and faithful visual identity suitable for a library of spiritual teachings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn11Gq7_lb6KXsoMkLzbP2-f9cZYyvGbSL80XL87po_-mLUZ2Liq7lWqc7TZ39gj196MmgcjxxF2Mi2Dca0pcEBQ2IqyJo3XyR91DELC5a7ppUte1WtWs_JBQ84qy8R14qm3dEk2IlfUDqjJ8zgytkkpMts_jkSw0aCncLsZkVz-1vG2uSL4urctQR4avxYazo9VLDnfktVmgMaW89wu3WNLnMntzYWFGIE0BRYMY9M6UOXEH31MqERglDyTMgGrwEBIsPxXmweX8"/>
+<div class="absolute bottom-3 right-3 flex gap-2">
+<span class="bg-primary/90 text-warm-white px-3 py-1 rounded-full text-caption font-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">videocam</span> Video
+                            </span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-3 text-caption font-caption text-on-surface-variant">
+<span>Sep 29, 2024</span>
+<span class="h-1 w-1 bg-warm-taupe rounded-full"></span>
+<span class="font-medium text-muted-rust">Proverbs 3:5-6</span>
+</div>
+<h3 class="font-h3-sub text-h3-sub text-primary group-hover:text-muted-rust transition-colors">
+<a href="#">The Path of Wholehearted Trust</a>
+</h3>
+<p class="line-clamp-2 text-on-surface-variant">
+                            How to lean not on our own understanding when the circumstances of life seem to contradict the promises of God.
+                        </p>
+</div>
+</article>
+<!-- Sermon Card 6 -->
+<article class="sermon-card group">
+<div class="overflow-hidden rounded-lg mb-4 aspect-video relative border border-warm-taupe/30">
+<img class="sermon-image w-full h-full object-cover" data-alt="A high-contrast, minimalist photograph of an old stone path winding into a misty forest. The mood is one of quiet contemplation and spiritual journey. The lighting is soft and diffused, highlighting the tactile textures of the stone and trees. The design maintains a sophisticated serif-led hierarchy with earthy tones to provide intellectual clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPBMMh3oSaC8f6x2tXRJgGj_TpNpeIjd03zehXPVnlUeyKBAi6NQC0_QB3hny0bPr1gtQ2s9heIQDOd5xGVCVLgrvxHEg3egVB8mtLuZ13dRy33l8LR4p8wAj-rr7Sj7JFQGfml_1tHZkW2xkTOQI7wYyV2w1r8IaA3tGMBmG3Z7p6kfu7DnoK1w_23x1LrtuAwkd-q65OSSLW-6wK8029ZVl8JMB8H_1CI_HwuACF4MscxccSu1YndyS4SDznVRG3Bm79oXnGK4Q"/>
+<div class="absolute bottom-3 right-3 flex gap-2">
+<span class="bg-primary/90 text-warm-white px-3 py-1 rounded-full text-caption font-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">headphones</span> Audio
+                            </span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-3 text-caption font-caption text-on-surface-variant">
+<span>Sep 22, 2024</span>
+<span class="h-1 w-1 bg-warm-taupe rounded-full"></span>
+<span class="font-medium text-muted-rust">Revelation 21:1-5</span>
+</div>
+<h3 class="font-h3-sub text-h3-sub text-primary group-hover:text-muted-rust transition-colors">
+<a href="#">Behold, I Make All Things New</a>
+</h3>
+<p class="line-clamp-2 text-on-surface-variant">
+                            A hopeful look at the culmination of the redemptive story and the future glory that awaits the people of God.
+                        </p>
+</div>
+</article>
+</div>
+<!-- Pagination -->
+<div class="mt-16 flex justify-center gap-2">
+<button class="w-10 h-10 flex items-center justify-center rounded-[4px] border border-warm-taupe/30 bg-warm-white text-primary hover:bg-parchment transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-[4px] bg-primary text-warm-white">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-[4px] border border-warm-taupe/30 bg-warm-white text-on-surface-variant hover:bg-parchment transition-all">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-[4px] border border-warm-taupe/30 bg-warm-white text-on-surface-variant hover:bg-parchment transition-all">3</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-[4px] border border-warm-taupe/30 bg-warm-white text-primary hover:bg-parchment transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Newsletter Section (As specified in Style Guidance) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- In the Midst -->
+<div class="bg-parchment p-10 rounded-lg border border-warm-taupe/30">
+<h3 class="font-h3-sub text-h3-sub text-primary mb-4">In the Midst</h3>
+<p class="text-on-surface-variant mb-6">A weekly devotional letter reflecting on the presence of God in the ordinary rhythms of life.</p>
+<div class="flex gap-2">
+<input class="flex-1 bg-warm-white border-warm-taupe rounded-[4px] px-4 py-2 focus:ring-primary focus:border-primary" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-warm-white px-6 py-2 rounded-[4px] font-nav-link text-nav-link hover:bg-opacity-90 transition-all">Join</button>
+</div>
+</div>
+<!-- Mockingbird Watch -->
+<div class="bg-[#E4DFD5] p-10 rounded-lg border border-warm-taupe/30">
+<h3 class="font-h3-sub text-h3-sub text-primary mb-4">Mockingbird Watch</h3>
+<p class="text-on-surface-variant mb-6">Deeper theological analysis and resource recommendations for the serious student of Scripture.</p>
+<div class="flex gap-2">
+<input class="flex-1 bg-warm-white border-warm-taupe rounded-[4px] px-4 py-2 focus:ring-primary focus:border-primary" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-warm-white px-6 py-2 rounded-[4px] font-nav-link text-nav-link hover:bg-opacity-90 transition-all">Join</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-inverse-surface border-t border-warm-taupe/30">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<div class="font-h3-sub text-h3-sub text-primary dark:text-primary-fixed-dim mb-6">Michael Gremillion</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Faithful, grounded, and warm spiritual teachings for intellectual clarity.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-h4-label text-h4-label text-primary">Explore</h4>
+<a class="text-on-surface-variant hover:underline decoration-primary transition-all" href="#">Books</a>
+<a class="text-primary font-bold" href="#">Sermons</a>
+<a class="text-on-surface-variant hover:underline decoration-primary transition-all" href="#">Resources</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-h4-label text-h4-label text-primary">About</h4>
+<a class="text-on-surface-variant hover:underline decoration-primary transition-all" href="#">My Story</a>
+<a class="text-on-surface-variant hover:underline decoration-primary transition-all" href="#">Contact</a>
+<a class="text-on-surface-variant hover:underline decoration-primary transition-all" href="#">About</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-h4-label text-h4-label text-primary">Legal</h4>
+<a class="text-on-surface-variant hover:underline decoration-primary transition-all" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:underline decoration-primary transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 border-t border-warm-taupe/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Michael Gremillion. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-primary hover:text-muted-rust transition-colors" href="#"><span class="material-symbols-outlined">podcasts</span></a>
+<a class="text-primary hover:text-muted-rust transition-colors" href="#"><span class="material-symbols-outlined">video_library</span></a>
+<a class="text-primary hover:text-muted-rust transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll effect for TopNavBar
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body></html>
